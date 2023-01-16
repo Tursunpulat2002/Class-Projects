@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A33820FB2974BAAB000C3BBC /* Lion_SpellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33820FA2974BAAB000C3BBC /* Lion_SpellApp.swift */; };
+		A33820FD2974BAAB000C3BBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33820FC2974BAAB000C3BBC /* ContentView.swift */; };
+		A33820FF2974BAAC000C3BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33820FE2974BAAC000C3BBC /* Assets.xcassets */; };
+		A33821022974BAAC000C3BBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33821012974BAAC000C3BBC /* Preview Assets.xcassets */; };
+		A33821252974BF3F000C3BBC /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33821242974BF3F000C3BBC /* TitleView.swift */; };
+		A33821272974E5DF000C3BBC /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33821262974E5DF000C3BBC /* WordListView.swift */; };
+		A33821292974EFEA000C3BBC /* LettersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33821282974EFEA000C3BBC /* LettersView.swift */; };
+		A338212B2974F47B000C3BBC /* LetterButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338212A2974F47B000C3BBC /* LetterButtonsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A33821082974BAAC000C3BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33820EF2974BAAB000C3BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A33820F62974BAAB000C3BBC;
+			remoteInfo = "Lion Spell";
+		};
+		A33821122974BAAC000C3BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33820EF2974BAAB000C3BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A33820F62974BAAB000C3BBC;
+			remoteInfo = "Lion Spell";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A33820F72974BAAB000C3BBC /* Lion Spell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lion Spell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33820FA2974BAAB000C3BBC /* Lion_SpellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion_SpellApp.swift; sourceTree = "<group>"; };
+		A33820FC2974BAAB000C3BBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A33820FE2974BAAC000C3BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A33821012974BAAC000C3BBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A33821072974BAAC000C3BBC /* Lion SpellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lion SpellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33821112974BAAC000C3BBC /* Lion SpellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lion SpellUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33821242974BF3F000C3BBC /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		A33821262974E5DF000C3BBC /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
+		A33821282974EFEA000C3BBC /* LettersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersView.swift; sourceTree = "<group>"; };
+		A338212A2974F47B000C3BBC /* LetterButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A33820F42974BAAB000C3BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33821042974BAAC000C3BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A338210E2974BAAC000C3BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A33820EE2974BAAB000C3BBC = {
+			isa = PBXGroup;
+			children = (
+				A33820F92974BAAB000C3BBC /* Lion Spell */,
+				A33820F82974BAAB000C3BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A33820F82974BAAB000C3BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A33820F72974BAAB000C3BBC /* Lion Spell.app */,
+				A33821072974BAAC000C3BBC /* Lion SpellTests.xctest */,
+				A33821112974BAAC000C3BBC /* Lion SpellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A33820F92974BAAB000C3BBC /* Lion Spell */ = {
+			isa = PBXGroup;
+			children = (
+				A33820FA2974BAAB000C3BBC /* Lion_SpellApp.swift */,
+				A33820FC2974BAAB000C3BBC /* ContentView.swift */,
+				A338212A2974F47B000C3BBC /* LetterButtonsView.swift */,
+				A33821282974EFEA000C3BBC /* LettersView.swift */,
+				A33821262974E5DF000C3BBC /* WordListView.swift */,
+				A33820FE2974BAAC000C3BBC /* Assets.xcassets */,
+				A33821002974BAAC000C3BBC /* Preview Content */,
+				A33821242974BF3F000C3BBC /* TitleView.swift */,
+			);
+			path = "Lion Spell";
+			sourceTree = "<group>";
+		};
+		A33821002974BAAC000C3BBC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A33821012974BAAC000C3BBC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A33820F62974BAAB000C3BBC /* Lion Spell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A338211B2974BAAC000C3BBC /* Build configuration list for PBXNativeTarget "Lion Spell" */;
+			buildPhases = (
+				A33820F32974BAAB000C3BBC /* Sources */,
+				A33820F42974BAAB000C3BBC /* Frameworks */,
+				A33820F52974BAAB000C3BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lion Spell";
+			productName = "Lion Spell";
+			productReference = A33820F72974BAAB000C3BBC /* Lion Spell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A33821062974BAAC000C3BBC /* Lion SpellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A338211E2974BAAC000C3BBC /* Build configuration list for PBXNativeTarget "Lion SpellTests" */;
+			buildPhases = (
+				A33821032974BAAC000C3BBC /* Sources */,
+				A33821042974BAAC000C3BBC /* Frameworks */,
+				A33821052974BAAC000C3BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33821092974BAAC000C3BBC /* PBXTargetDependency */,
+			);
+			name = "Lion SpellTests";
+			productName = "Lion SpellTests";
+			productReference = A33821072974BAAC000C3BBC /* Lion SpellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A33821102974BAAC000C3BBC /* Lion SpellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33821212974BAAC000C3BBC /* Build configuration list for PBXNativeTarget "Lion SpellUITests" */;
+			buildPhases = (
+				A338210D2974BAAC000C3BBC /* Sources */,
+				A338210E2974BAAC000C3BBC /* Frameworks */,
+				A338210F2974BAAC000C3BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33821132974BAAC000C3BBC /* PBXTargetDependency */,
+			);
+			name = "Lion SpellUITests";
+			productName = "Lion SpellUITests";
+			productReference = A33821112974BAAC000C3BBC /* Lion SpellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A33820EF2974BAAB000C3BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A33820F62974BAAB000C3BBC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A33821062974BAAC000C3BBC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A33820F62974BAAB000C3BBC;
+					};
+					A33821102974BAAC000C3BBC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A33820F62974BAAB000C3BBC;
+					};
+				};
+			};
+			buildConfigurationList = A33820F22974BAAB000C3BBC /* Build configuration list for PBXProject "Lion Spell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A33820EE2974BAAB000C3BBC;
+			productRefGroup = A33820F82974BAAB000C3BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A33820F62974BAAB000C3BBC /* Lion Spell */,
+				A33821062974BAAC000C3BBC /* Lion SpellTests */,
+				A33821102974BAAC000C3BBC /* Lion SpellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A33820F52974BAAB000C3BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33821022974BAAC000C3BBC /* Preview Assets.xcassets in Resources */,
+				A33820FF2974BAAC000C3BBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33821052974BAAC000C3BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A338210F2974BAAC000C3BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A33820F32974BAAB000C3BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338212B2974F47B000C3BBC /* LetterButtonsView.swift in Sources */,
+				A33821272974E5DF000C3BBC /* WordListView.swift in Sources */,
+				A33821292974EFEA000C3BBC /* LettersView.swift in Sources */,
+				A33820FD2974BAAB000C3BBC /* ContentView.swift in Sources */,
+				A33820FB2974BAAB000C3BBC /* Lion_SpellApp.swift in Sources */,
+				A33821252974BF3F000C3BBC /* TitleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33821032974BAAC000C3BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A338210D2974BAAC000C3BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A33821092974BAAC000C3BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A33820F62974BAAB000C3BBC /* Lion Spell */;
+			targetProxy = A33821082974BAAC000C3BBC /* PBXContainerItemProxy */;
+		};
+		A33821132974BAAC000C3BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A33820F62974BAAB000C3BBC /* Lion Spell */;
+			targetProxy = A33821122974BAAC000C3BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A33821192974BAAC000C3BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A338211A2974BAAC000C3BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A338211C2974BAAC000C3BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lion Spell/Preview Content\"";
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.tro5079.Lion-Spell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A338211D2974BAAC000C3BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lion Spell/Preview Content\"";
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.tro5079.Lion-Spell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A338211F2974BAAC000C3BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.tro5079.Lion-SpellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lion Spell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lion Spell";
+			};
+			name = Debug;
+		};
+		A33821202974BAAC000C3BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.tro5079.Lion-SpellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lion Spell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lion Spell";
+			};
+			name = Release;
+		};
+		A33821222974BAAC000C3BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.tro5079.Lion-SpellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lion Spell";
+			};
+			name = Debug;
+		};
+		A33821232974BAAC000C3BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.psu.tro5079.Lion-SpellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lion Spell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A33820F22974BAAB000C3BBC /* Build configuration list for PBXProject "Lion Spell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33821192974BAAC000C3BBC /* Debug */,
+				A338211A2974BAAC000C3BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A338211B2974BAAC000C3BBC /* Build configuration list for PBXNativeTarget "Lion Spell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A338211C2974BAAC000C3BBC /* Debug */,
+				A338211D2974BAAC000C3BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A338211E2974BAAC000C3BBC /* Build configuration list for PBXNativeTarget "Lion SpellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A338211F2974BAAC000C3BBC /* Debug */,
+				A33821202974BAAC000C3BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33821212974BAAC000C3BBC /* Build configuration list for PBXNativeTarget "Lion SpellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33821222974BAAC000C3BBC /* Debug */,
+				A33821232974BAAC000C3BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A33820EF2974BAAB000C3BBC /* Project object */;
+}
