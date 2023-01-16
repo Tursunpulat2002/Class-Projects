@@ -17,6 +17,9 @@ struct ContentView: View {
                 WordListView(list: ["thing 1", "thing 2", "thing 3"])
                 LettersView(list: ["a", "b", "c", "d"])
                 LetterButtonsView()
+                SubmitDeleteButtonsView()
+                ScoreView()
+                OptionsButtonsView()
             }
             .padding()
         }

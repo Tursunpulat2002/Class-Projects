@@ -15,19 +15,17 @@ struct WordListView: View {
             HStack(alignment: .center){
                 ForEach(0..<size, id: \.self){ i in
                     Text("\(list[i]) ")
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
                 }
             }
-                .background(Color.gray)
         }
             .padding()
-            .fixedSize(horizontal: true, vertical: false)
-            .offset(y: -50)
+            
     }
 }
 
 struct WordListView_Previews: PreviewProvider {
     static var previews: some View {
-        WordListView(list: ["thing 1", "thing 2", "thing 3"])
+        WordListView(list: ["thing 1", "thing 2", "thing 3", "thing 3", "thing 3"])
     }
 }

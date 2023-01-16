@@ -12,8 +12,8 @@ struct TitleView: View {
         HStack{
             Text("Lion Spell")
                 .font(.system(size: 50))
-                .offset(y: -300)
-        }
+        }.padding()
+            .frame(maxHeight: .infinity, alignment: .top)
     }
 }
 
