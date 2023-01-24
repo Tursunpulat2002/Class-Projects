@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct LetterButtonsView: View {
-    let choices: [String] = ["a", "b", "c", "d", "e"]
+    @EnvironmentObject var manager: WordsManager
     var body: some View {
         HStack{
-            ForEach(0..<5){i in
-                Button(action: {}){
-                    Text("\(choices[i])")
+            ForEach(0..<manager.game.letters.count, id: \.self){i in
+                Button(action: {manager.buttonClicked(index: i)}){
+                    Text("\(manager.game.letters[i])")
                         .foregroundColor(Color.black)
                 }.buttonStyle(.bordered)
                     .background(Color.red)
@@ -27,5 +27,6 @@ struct LetterButtonsView: View {
 struct LetterButtonsView_Previews: PreviewProvider {
     static var previews: some View {
         LetterButtonsView()
+            .environmentObject(WordsManager())
     }
 }

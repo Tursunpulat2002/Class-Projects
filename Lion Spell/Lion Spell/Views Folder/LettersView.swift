@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct LettersView: View {
-    let list: [String]
+    @EnvironmentObject var manager: WordsManager
     var body: some View {
-        let size = list.count
         HStack{
-            ForEach(0..<size, id: \.self){i in
-                Text("\(list[i]) ")
+            ForEach(0..<manager.game.typedLetters.count, id: \.self){i in
+                Text("\(manager.game.typedLetters[i]) ")
             }
         }
     }
@@ -21,6 +20,7 @@ struct LettersView: View {
 
 struct LettersView_Previews: PreviewProvider {
     static var previews: some View {
-        LettersView(list: ["a", "b", "c", "d"])
+        LettersView()
+            .environmentObject(WordsManager())
     }
 }

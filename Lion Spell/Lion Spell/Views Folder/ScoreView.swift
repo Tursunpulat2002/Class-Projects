@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ScoreView: View {
+    @EnvironmentObject var manager: WordsManager
     var body: some View {
-        Text("3")
+        Text(manager.game.score)
             .font(.title)
     }
 }
@@ -17,5 +18,6 @@ struct ScoreView: View {
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
         ScoreView()
+            .environmentObject(WordsManager())
     }
 }

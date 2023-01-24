@@ -18,6 +18,8 @@
 		A338212D2975C09D000C3BBC /* SubmitDeleteButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338212C2975C09D000C3BBC /* SubmitDeleteButtonsView.swift */; };
 		A338212F2975C148000C3BBC /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338212E2975C148000C3BBC /* ScoreView.swift */; };
 		A33821312975C284000C3BBC /* OptionsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33821302975C284000C3BBC /* OptionsButtonsView.swift */; };
+		A386DD2A297CB6F800C3D578 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386DD29297CB6F800C3D578 /* Words.swift */; };
+		A386DD2E297E042600C3D578 /* WordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386DD2D297E042600C3D578 /* WordsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A338212C2975C09D000C3BBC /* SubmitDeleteButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitDeleteButtonsView.swift; sourceTree = "<group>"; };
 		A338212E2975C148000C3BBC /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		A33821302975C284000C3BBC /* OptionsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsButtonsView.swift; sourceTree = "<group>"; };
+		A386DD29297CB6F800C3D578 /* Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		A386DD2D297E042600C3D578 /* WordsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,16 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				A33820FA2974BAAB000C3BBC /* Lion_SpellApp.swift */,
-				A33820FC2974BAAB000C3BBC /* ContentView.swift */,
-				A33821302975C284000C3BBC /* OptionsButtonsView.swift */,
-				A338212E2975C148000C3BBC /* ScoreView.swift */,
-				A338212C2975C09D000C3BBC /* SubmitDeleteButtonsView.swift */,
-				A338212A2974F47B000C3BBC /* LetterButtonsView.swift */,
-				A33821282974EFEA000C3BBC /* LettersView.swift */,
-				A33821262974E5DF000C3BBC /* WordListView.swift */,
+				A386DD2F297E043400C3D578 /* ViewModel Folder */,
+				A386DD2C297CB75B00C3D578 /* Model Folder */,
+				A386DD2B297CB73600C3D578 /* Views Folder */,
 				A33820FE2974BAAC000C3BBC /* Assets.xcassets */,
 				A33821002974BAAC000C3BBC /* Preview Content */,
-				A33821242974BF3F000C3BBC /* TitleView.swift */,
 			);
 			path = "Lion Spell";
 			sourceTree = "<group>";
@@ -121,6 +120,37 @@
 				A33821012974BAAC000C3BBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A386DD2B297CB73600C3D578 /* Views Folder */ = {
+			isa = PBXGroup;
+			children = (
+				A33820FC2974BAAB000C3BBC /* ContentView.swift */,
+				A33821242974BF3F000C3BBC /* TitleView.swift */,
+				A33821302975C284000C3BBC /* OptionsButtonsView.swift */,
+				A338212E2975C148000C3BBC /* ScoreView.swift */,
+				A338212C2975C09D000C3BBC /* SubmitDeleteButtonsView.swift */,
+				A338212A2974F47B000C3BBC /* LetterButtonsView.swift */,
+				A33821282974EFEA000C3BBC /* LettersView.swift */,
+				A33821262974E5DF000C3BBC /* WordListView.swift */,
+			);
+			path = "Views Folder";
+			sourceTree = "<group>";
+		};
+		A386DD2C297CB75B00C3D578 /* Model Folder */ = {
+			isa = PBXGroup;
+			children = (
+				A386DD29297CB6F800C3D578 /* Words.swift */,
+			);
+			path = "Model Folder";
+			sourceTree = "<group>";
+		};
+		A386DD2F297E043400C3D578 /* ViewModel Folder */ = {
+			isa = PBXGroup;
+			children = (
+				A386DD2D297E042600C3D578 /* WordsManager.swift */,
+			);
+			path = "ViewModel Folder";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +287,11 @@
 				A338212F2975C148000C3BBC /* ScoreView.swift in Sources */,
 				A33821272974E5DF000C3BBC /* WordListView.swift in Sources */,
 				A338212D2975C09D000C3BBC /* SubmitDeleteButtonsView.swift in Sources */,
+				A386DD2E297E042600C3D578 /* WordsManager.swift in Sources */,
 				A33821292974EFEA000C3BBC /* LettersView.swift in Sources */,
 				A33821312975C284000C3BBC /* OptionsButtonsView.swift in Sources */,
 				A33820FD2974BAAB000C3BBC /* ContentView.swift in Sources */,
+				A386DD2A297CB6F800C3D578 /* Words.swift in Sources */,
 				A33820FB2974BAAB000C3BBC /* Lion_SpellApp.swift in Sources */,
 				A33821252974BF3F000C3BBC /* TitleView.swift in Sources */,
 			);

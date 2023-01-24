@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var manager: WordsManager
     var body: some View {
         ZStack{
             Color.cyan
                 .ignoresSafeArea()
             VStack{
                 TitleView()
-                WordListView(list: ["thing 1", "thing 2", "thing 3"])
-                LettersView(list: ["a", "b", "c", "d"])
+                WordListView()
+                LettersView()
                 LetterButtonsView()
                 SubmitDeleteButtonsView()
                 ScoreView()
@@ -29,5 +30,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(WordsManager())
     }
 }

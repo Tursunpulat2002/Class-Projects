@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OptionsButtonsView: View {
+    @EnvironmentObject var manager: WordsManager
     var body: some View {
         HStack{
             Button(action: {}){
@@ -33,5 +34,6 @@ struct OptionsButtonsView: View {
 struct OptionsButtonsView_Previews: PreviewProvider {
     static var previews: some View {
         OptionsButtonsView()
+            .environmentObject(WordsManager())
     }
 }

@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct WordListView: View {
-    let list: [String]
+    @EnvironmentObject var manager: WordsManager
     var body: some View {
-        let size: Int = list.count
         ScrollView(Axis.Set.horizontal){
             HStack(alignment: .center){
-                ForEach(0..<size, id: \.self){ i in
-                    Text("\(list[i]) ")
+                ForEach(0..<manager.game.list.count, id: \.self){ i in
+                    Text("\(manager.game.list[i]) ")
                         .foregroundColor(Color.black)
                 }
             }
@@ -26,6 +25,7 @@ struct WordListView: View {
 
 struct WordListView_Previews: PreviewProvider {
     static var previews: some View {
-        WordListView(list: ["thing 1", "thing 2", "thing 3", "thing 3", "thing 3"])
+        WordListView()
+            .environmentObject(WordsManager())
     }
 }
