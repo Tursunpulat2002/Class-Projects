@@ -10,7 +10,7 @@ import SwiftUI
 struct ScoreView: View {
     @EnvironmentObject var manager: WordsManager
     var body: some View {
-        Text(manager.game.score)
+        Text("\(manager.game.score)")
             .font(.title)
     }
 }

@@ -11,7 +11,7 @@ struct OptionsButtonsView: View {
     @EnvironmentObject var manager: WordsManager
     var body: some View {
         HStack{
-            Button(action: {}){
+            Button(action: {manager.newGame()}){
                 Text("New Game")
             }.buttonStyle(.borderedProminent)
             

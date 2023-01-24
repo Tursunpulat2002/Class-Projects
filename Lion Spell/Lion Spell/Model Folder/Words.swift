@@ -8,10 +8,10 @@
 import Foundation
 
 struct GameSession: Identifiable{
-    var letters: [String] = [""]
-    var score: String = "0"
-    var list: [String] = [""]
-    var typedLetters: [String] = [""]
+    var letters: [String]
+    var score: Int
+    var list: [String]
+    var typedLetters: [String]
     let id = UUID()
 }
 
