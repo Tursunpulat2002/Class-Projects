@@ -7,32 +7,57 @@
 
 import Foundation
 
+struct Preferences{
+    var language: String = "English"
+    var numOfLetters: Int = 5
+    static let languageOptions: [String] = ["English", "French"]
+    static let numOfLettersOptions: [Int] = [5, 6, 7]
+}
+
 class WordsManager: ObservableObject{
-    @Published var game: GameSession
-    var letters: [String] = {()->[String] in
-        var words: String = ""
-        while(true){
-            words = Words.words.randomElement()!
-            var output: [String] = []
-            for word in words{
-                if(output.contains(String(word))){
-                    continue
-                }
-                else{
-                    output.append(String(word))
-                }
-            }
-            if(output.count == 5){
-                return output.shuffled()
-            }
-        }
-    }()
+    @Published var game: GameSession = GameSession()
     @Published var isDeleteVisible: Bool = false
     @Published var isSubmitVisible: Bool = false
+    @Published var preferences = Preferences()
     var counter: Int = 0
     
     init(){
-        game = GameSession(letters: letters, score: 0, list: [""], typedLetters: [""])
+        game.letters = {()->[String] in
+            var words: String = ""
+            if(preferences.language == "English"){
+                while(true){
+                    words = Words.words.randomElement()!
+                    var output: [String] = []
+                    for word in words{
+                        if(output.contains(String(word))){
+                            continue
+                        }
+                        else{
+                            output.append(String(word))
+                        }
+                    }
+                    if(output.count == preferences.numOfLetters){
+                        return output.shuffled()
+                    }
+                }
+            }else{
+                while(true){
+                    words = Words.frenchWords.randomElement()!
+                    var output: [String] = []
+                    for word in words{
+                        if(output.contains(String(word))){
+                            continue
+                        }
+                        else{
+                            output.append(String(word))
+                        }
+                    }
+                    if(output.count == preferences.numOfLetters){
+                        return output.shuffled()
+                    }
+                }
+            }
+        }()
     }
     
     func buttonClicked(index: Int){
@@ -41,14 +66,14 @@ class WordsManager: ObservableObject{
         if(game.typedLetters.count > 0){
             isDeleteVisible = true
         }
-        
-        if(Words.words.contains(game.typedLetters.joined())){
-            isSubmitVisible = true
+        if(preferences.language == "English"){
+            if(Words.words.contains(game.typedLetters.joined()) || Words.frenchWords.contains(game.typedLetters.joined())){
+                isSubmitVisible = true
+            }
         }
     }
     
     func deleteLetter(){
-        
         if(game.typedLetters.count > 0){
             game.typedLetters.removeLast()
             counter-=1
@@ -68,40 +93,60 @@ class WordsManager: ObservableObject{
     
     func generateLetters() -> [String]{
         var words: String = ""
-        while(true){
-            words = Words.words.randomElement()!
-            var output: [String] = []
-            for word in words{
-                if(output.contains(String(word))){
-                    continue
+        if(preferences.language == "English"){
+            while(true){
+                words = Words.words.randomElement()!
+                var output: [String] = []
+                for word in words{
+                    if(output.contains(String(word))){
+                        continue
+                    }
+                    else{
+                        output.append(String(word))
+                    }
                 }
-                else{
-                    output.append(String(word))
+                if(output.count == preferences.numOfLetters){
+                    return output.shuffled()
                 }
             }
-            if(output.count == 5){
-                return output.shuffled()
+        }else{
+            while(true){
+                words = Words.frenchWords.randomElement()!
+                var output: [String] = []
+                for word in words{
+                    if(output.contains(String(word))){
+                        continue
+                    }
+                    else{
+                        output.append(String(word))
+                    }
+                }
+                if(output.count == preferences.numOfLetters){
+                    return output.shuffled()
+                }
             }
         }
     }
 
     func submitWords(){
         let word = game.typedLetters.joined()
-        if(game.typedLetters.count > 0 && Words.words.contains(word) && !game.list.contains(word)){
-            game.list.append(word)
-            if(game.typedLetters.count < 5){
-                game.score += 1
-            }else{
-                game.score += game.typedLetters.count
-                if(game.typedLetters.contains{game.letters.contains($0)}){
-                    game.score += 5
-                }
+        if(!game.list.contains(word)){
+            switch game.typedLetters.joined().count{
+            case 1..<5:
+                game.score = game.score + 1
+            default:
+                game.score = game.score + game.typedLetters.count
             }
             
-            isDeleteVisible = false
-            isSubmitVisible = false
-            game.typedLetters.removeAll()
+            if(Set(game.typedLetters.joined()).count == preferences.numOfLetters){
+                game.score = game.score + preferences.numOfLetters
+            }
         }
+        
+        game.list.append(word)
+        isDeleteVisible = false
+        isSubmitVisible = false
+        game.typedLetters.removeAll()
     }
     
 }

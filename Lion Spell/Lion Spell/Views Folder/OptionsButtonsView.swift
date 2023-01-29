@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OptionsButtonsView: View {
     @EnvironmentObject var manager: WordsManager
+    @State var showPreferences: Bool = false
     var body: some View {
         HStack{
             Button(action: {manager.newGame()}){
@@ -23,17 +24,21 @@ struct OptionsButtonsView: View {
             
             Spacer()
             
-            Button(action: {}){
+            Button(action: {showPreferences = true}){
                 Text("Preferences")
             }.buttonStyle(.borderedProminent)
-        }.padding()
-            .frame(maxHeight: .infinity ,alignment: .bottom)
+        }
+        .padding()
+        .frame(maxHeight: .infinity ,alignment: .bottom)
+        .sheet(isPresented: $showPreferences, content:{
+            PreferencesView(preferences: $manager.preferences)
+        })
     }
 }
 
 struct OptionsButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        OptionsButtonsView()
+        OptionsButtonsView(showPreferences: false)
             .environmentObject(WordsManager())
     }
 }

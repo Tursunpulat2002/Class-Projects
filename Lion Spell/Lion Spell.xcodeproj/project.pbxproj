@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30A858C29870BE900F67633 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A858B29870BE900F67633 /* PreferencesView.swift */; };
 		A33820FB2974BAAB000C3BBC /* Lion_SpellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33820FA2974BAAB000C3BBC /* Lion_SpellApp.swift */; };
 		A33820FD2974BAAB000C3BBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33820FC2974BAAB000C3BBC /* ContentView.swift */; };
 		A33820FF2974BAAC000C3BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33820FE2974BAAC000C3BBC /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A30A858B29870BE900F67633 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		A33820F72974BAAB000C3BBC /* Lion Spell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lion Spell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33820FA2974BAAB000C3BBC /* Lion_SpellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion_SpellApp.swift; sourceTree = "<group>"; };
 		A33820FC2974BAAB000C3BBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				A338212A2974F47B000C3BBC /* LetterButtonsView.swift */,
 				A33821282974EFEA000C3BBC /* LettersView.swift */,
 				A33821262974E5DF000C3BBC /* WordListView.swift */,
+				A30A858B29870BE900F67633 /* PreferencesView.swift */,
 			);
 			path = "Views Folder";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A338212B2974F47B000C3BBC /* LetterButtonsView.swift in Sources */,
+				A30A858C29870BE900F67633 /* PreferencesView.swift in Sources */,
 				A338212F2975C148000C3BBC /* ScoreView.swift in Sources */,
 				A33821272974E5DF000C3BBC /* WordListView.swift in Sources */,
 				A338212D2975C09D000C3BBC /* SubmitDeleteButtonsView.swift in Sources */,
