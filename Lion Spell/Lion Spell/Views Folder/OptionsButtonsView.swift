@@ -10,6 +10,7 @@ import SwiftUI
 struct OptionsButtonsView: View {
     @EnvironmentObject var manager: WordsManager
     @State var showPreferences: Bool = false
+    @State var showHint: Bool = false
     var body: some View {
         HStack{
             Button(action: {manager.newGame()}){
@@ -18,7 +19,7 @@ struct OptionsButtonsView: View {
             
             Spacer()
             
-            Button(action: {}){
+            Button(action: {showHint = true}){
                 Text("Hints")
             }.buttonStyle(.borderedProminent)
             
@@ -30,8 +31,13 @@ struct OptionsButtonsView: View {
         }
         .padding()
         .frame(maxHeight: .infinity ,alignment: .bottom)
-        .sheet(isPresented: $showPreferences, content:{
-            PreferencesView(preferences: $manager.preferences)
+        .sheet(isPresented: $showPreferences){
+            manager.preferencesClosed()
+        }content:{
+            PreferencesView()
+        }
+        .sheet(isPresented: $showHint, content:{
+            HintView()
         })
     }
 }
