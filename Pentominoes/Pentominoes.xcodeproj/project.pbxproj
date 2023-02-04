@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A341C273298EDBA100C509B9 /* PentominoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C272298EDBA100C509B9 /* PentominoesApp.swift */; };
+		A341C275298EDBA100C509B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C274298EDBA100C509B9 /* ContentView.swift */; };
+		A341C277298EDBA300C509B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A341C276298EDBA300C509B9 /* Assets.xcassets */; };
+		A341C27A298EDBA300C509B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A341C279298EDBA300C509B9 /* Preview Assets.xcassets */; };
+		A341C284298EDBA300C509B9 /* PentominoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C283298EDBA300C509B9 /* PentominoesTests.swift */; };
+		A341C28E298EDBA300C509B9 /* PentominoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */; };
+		A341C290298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A341C280298EDBA300C509B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A341C267298EDBA100C509B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A341C26E298EDBA100C509B9;
+			remoteInfo = Pentominoes;
+		};
+		A341C28A298EDBA300C509B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A341C267298EDBA100C509B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A341C26E298EDBA100C509B9;
+			remoteInfo = Pentominoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A341C26F298EDBA100C509B9 /* Pentominoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pentominoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A341C272298EDBA100C509B9 /* PentominoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesApp.swift; sourceTree = "<group>"; };
+		A341C274298EDBA100C509B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A341C276298EDBA300C509B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A341C279298EDBA300C509B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A341C27F298EDBA300C509B9 /* PentominoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentominoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A341C283298EDBA300C509B9 /* PentominoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesTests.swift; sourceTree = "<group>"; };
+		A341C289298EDBA300C509B9 /* PentominoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentominoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesUITests.swift; sourceTree = "<group>"; };
+		A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A341C26C298EDBA100C509B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A341C27C298EDBA300C509B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A341C286298EDBA300C509B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A341C266298EDBA100C509B9 = {
+			isa = PBXGroup;
+			children = (
+				A341C271298EDBA100C509B9 /* Pentominoes */,
+				A341C282298EDBA300C509B9 /* PentominoesTests */,
+				A341C28C298EDBA300C509B9 /* PentominoesUITests */,
+				A341C270298EDBA100C509B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A341C270298EDBA100C509B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A341C26F298EDBA100C509B9 /* Pentominoes.app */,
+				A341C27F298EDBA300C509B9 /* PentominoesTests.xctest */,
+				A341C289298EDBA300C509B9 /* PentominoesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A341C271298EDBA100C509B9 /* Pentominoes */ = {
+			isa = PBXGroup;
+			children = (
+				A341C272298EDBA100C509B9 /* PentominoesApp.swift */,
+				A341C274298EDBA100C509B9 /* ContentView.swift */,
+				A341C276298EDBA300C509B9 /* Assets.xcassets */,
+				A341C278298EDBA300C509B9 /* Preview Content */,
+			);
+			path = Pentominoes;
+			sourceTree = "<group>";
+		};
+		A341C278298EDBA300C509B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A341C279298EDBA300C509B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A341C282298EDBA300C509B9 /* PentominoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A341C283298EDBA300C509B9 /* PentominoesTests.swift */,
+			);
+			path = PentominoesTests;
+			sourceTree = "<group>";
+		};
+		A341C28C298EDBA300C509B9 /* PentominoesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */,
+				A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */,
+			);
+			path = PentominoesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A341C26E298EDBA100C509B9 /* Pentominoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A341C293298EDBA300C509B9 /* Build configuration list for PBXNativeTarget "Pentominoes" */;
+			buildPhases = (
+				A341C26B298EDBA100C509B9 /* Sources */,
+				A341C26C298EDBA100C509B9 /* Frameworks */,
+				A341C26D298EDBA100C509B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pentominoes;
+			productName = Pentominoes;
+			productReference = A341C26F298EDBA100C509B9 /* Pentominoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A341C27E298EDBA300C509B9 /* PentominoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A341C296298EDBA300C509B9 /* Build configuration list for PBXNativeTarget "PentominoesTests" */;
+			buildPhases = (
+				A341C27B298EDBA300C509B9 /* Sources */,
+				A341C27C298EDBA300C509B9 /* Frameworks */,
+				A341C27D298EDBA300C509B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A341C281298EDBA300C509B9 /* PBXTargetDependency */,
+			);
+			name = PentominoesTests;
+			productName = PentominoesTests;
+			productReference = A341C27F298EDBA300C509B9 /* PentominoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A341C288298EDBA300C509B9 /* PentominoesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A341C299298EDBA300C509B9 /* Build configuration list for PBXNativeTarget "PentominoesUITests" */;
+			buildPhases = (
+				A341C285298EDBA300C509B9 /* Sources */,
+				A341C286298EDBA300C509B9 /* Frameworks */,
+				A341C287298EDBA300C509B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A341C28B298EDBA300C509B9 /* PBXTargetDependency */,
+			);
+			name = PentominoesUITests;
+			productName = PentominoesUITests;
+			productReference = A341C289298EDBA300C509B9 /* PentominoesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A341C267298EDBA100C509B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A341C26E298EDBA100C509B9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A341C27E298EDBA300C509B9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A341C26E298EDBA100C509B9;
+					};
+					A341C288298EDBA300C509B9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A341C26E298EDBA100C509B9;
+					};
+				};
+			};
+			buildConfigurationList = A341C26A298EDBA100C509B9 /* Build configuration list for PBXProject "Pentominoes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A341C266298EDBA100C509B9;
+			productRefGroup = A341C270298EDBA100C509B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A341C26E298EDBA100C509B9 /* Pentominoes */,
+				A341C27E298EDBA300C509B9 /* PentominoesTests */,
+				A341C288298EDBA300C509B9 /* PentominoesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A341C26D298EDBA100C509B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A341C27A298EDBA300C509B9 /* Preview Assets.xcassets in Resources */,
+				A341C277298EDBA300C509B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A341C27D298EDBA300C509B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A341C287298EDBA300C509B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A341C26B298EDBA100C509B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A341C275298EDBA100C509B9 /* ContentView.swift in Sources */,
+				A341C273298EDBA100C509B9 /* PentominoesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A341C27B298EDBA300C509B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A341C284298EDBA300C509B9 /* PentominoesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A341C285298EDBA300C509B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A341C290298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift in Sources */,
+				A341C28E298EDBA300C509B9 /* PentominoesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A341C281298EDBA300C509B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A341C26E298EDBA100C509B9 /* Pentominoes */;
+			targetProxy = A341C280298EDBA300C509B9 /* PBXContainerItemProxy */;
+		};
+		A341C28B298EDBA300C509B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A341C26E298EDBA100C509B9 /* Pentominoes */;
+			targetProxy = A341C28A298EDBA300C509B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A341C291298EDBA300C509B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A341C292298EDBA300C509B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A341C294298EDBA300C509B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pentominoes/Preview Content\"";
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.Pentominoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A341C295298EDBA300C509B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pentominoes/Preview Content\"";
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.Pentominoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A341C297298EDBA300C509B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.PentominoesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pentominoes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pentominoes";
+			};
+			name = Debug;
+		};
+		A341C298298EDBA300C509B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.PentominoesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pentominoes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pentominoes";
+			};
+			name = Release;
+		};
+		A341C29A298EDBA300C509B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.PentominoesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pentominoes;
+			};
+			name = Debug;
+		};
+		A341C29B298EDBA300C509B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.PentominoesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pentominoes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A341C26A298EDBA100C509B9 /* Build configuration list for PBXProject "Pentominoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A341C291298EDBA300C509B9 /* Debug */,
+				A341C292298EDBA300C509B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A341C293298EDBA300C509B9 /* Build configuration list for PBXNativeTarget "Pentominoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A341C294298EDBA300C509B9 /* Debug */,
+				A341C295298EDBA300C509B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A341C296298EDBA300C509B9 /* Build configuration list for PBXNativeTarget "PentominoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A341C297298EDBA300C509B9 /* Debug */,
+				A341C298298EDBA300C509B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A341C299298EDBA300C509B9 /* Build configuration list for PBXNativeTarget "PentominoesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A341C29A298EDBA300C509B9 /* Debug */,
+				A341C29B298EDBA300C509B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A341C267298EDBA100C509B9 /* Project object */;
+}
