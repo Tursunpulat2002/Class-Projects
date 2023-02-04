@@ -14,6 +14,11 @@
 		A341C284298EDBA300C509B9 /* PentominoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C283298EDBA300C509B9 /* PentominoesTests.swift */; };
 		A341C28E298EDBA300C509B9 /* PentominoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */; };
 		A341C290298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */; };
+		A341C2AB298EDDE100C509B9 /* PuzzleOutlines.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2A8298EDDE100C509B9 /* PuzzleOutlines.json */; };
+		A341C2AC298EDDE100C509B9 /* Solutions.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2A9298EDDE100C509B9 /* Solutions.json */; };
+		A341C2AD298EDDE100C509B9 /* PentominoOutlines.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2AA298EDDE100C509B9 /* PentominoOutlines.json */; };
+		A341C2AF298EDDF300C509B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C2AE298EDDF300C509B9 /* Model.swift */; };
+		A341C2B1298EDF0B00C509B9 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C2B0298EDF0B00C509B9 /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		A341C289298EDBA300C509B9 /* PentominoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentominoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesUITests.swift; sourceTree = "<group>"; };
 		A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A341C2A8298EDDE100C509B9 /* PuzzleOutlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PuzzleOutlines.json; path = "Pentominoes Assets/JSON/PuzzleOutlines.json"; sourceTree = SOURCE_ROOT; };
+		A341C2A9298EDDE100C509B9 /* Solutions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Solutions.json; path = "Pentominoes Assets/JSON/Solutions.json"; sourceTree = SOURCE_ROOT; };
+		A341C2AA298EDDE100C509B9 /* PentominoOutlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PentominoOutlines.json; path = "Pentominoes Assets/JSON/PentominoOutlines.json"; sourceTree = SOURCE_ROOT; };
+		A341C2AE298EDDF300C509B9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "Pentominoes Assets/Model.swift"; sourceTree = SOURCE_ROOT; };
+		A341C2B0298EDF0B00C509B9 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				A341C272298EDBA100C509B9 /* PentominoesApp.swift */,
-				A341C274298EDBA100C509B9 /* ContentView.swift */,
+				A341C29F298EDCB500C509B9 /* Persistence */,
+				A341C29E298EDCA300C509B9 /* ViewModel */,
+				A341C29D298EDC9900C509B9 /* Model */,
+				A341C29C298EDC8600C509B9 /* Views */,
 				A341C276298EDBA300C509B9 /* Assets.xcassets */,
 				A341C278298EDBA300C509B9 /* Preview Content */,
 			);
@@ -125,6 +138,40 @@
 				A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */,
 			);
 			path = PentominoesUITests;
+			sourceTree = "<group>";
+		};
+		A341C29C298EDC8600C509B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A341C274298EDBA100C509B9 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A341C29D298EDC9900C509B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A341C2AE298EDDF300C509B9 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A341C29E298EDCA300C509B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A341C2B0298EDF0B00C509B9 /* GameManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A341C29F298EDCB500C509B9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A341C2AA298EDDE100C509B9 /* PentominoOutlines.json */,
+				A341C2A8298EDDE100C509B9 /* PuzzleOutlines.json */,
+				A341C2A9298EDDE100C509B9 /* Solutions.json */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A341C2AD298EDDE100C509B9 /* PentominoOutlines.json in Resources */,
 				A341C27A298EDBA300C509B9 /* Preview Assets.xcassets in Resources */,
+				A341C2AB298EDDE100C509B9 /* PuzzleOutlines.json in Resources */,
 				A341C277298EDBA300C509B9 /* Assets.xcassets in Resources */,
+				A341C2AC298EDDE100C509B9 /* Solutions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A341C2AF298EDDF300C509B9 /* Model.swift in Sources */,
+				A341C2B1298EDF0B00C509B9 /* GameManager.swift in Sources */,
 				A341C275298EDBA100C509B9 /* ContentView.swift in Sources */,
 				A341C273298EDBA100C509B9 /* PentominoesApp.swift in Sources */,
 			);
