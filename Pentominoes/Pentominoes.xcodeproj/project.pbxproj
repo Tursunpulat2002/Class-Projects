@@ -14,11 +14,11 @@
 		A341C284298EDBA300C509B9 /* PentominoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C283298EDBA300C509B9 /* PentominoesTests.swift */; };
 		A341C28E298EDBA300C509B9 /* PentominoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */; };
 		A341C290298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */; };
-		A341C2AB298EDDE100C509B9 /* PuzzleOutlines.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2A8298EDDE100C509B9 /* PuzzleOutlines.json */; };
-		A341C2AC298EDDE100C509B9 /* Solutions.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2A9298EDDE100C509B9 /* Solutions.json */; };
-		A341C2AD298EDDE100C509B9 /* PentominoOutlines.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2AA298EDDE100C509B9 /* PentominoOutlines.json */; };
-		A341C2AF298EDDF300C509B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C2AE298EDDF300C509B9 /* Model.swift */; };
 		A341C2B1298EDF0B00C509B9 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C2B0298EDF0B00C509B9 /* GameManager.swift */; };
+		A341C2B3298EDFDF00C509B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341C2B2298EDFDF00C509B9 /* Model.swift */; };
+		A341C2B5298EE0A700C509B9 /* PentominoOutlines.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2B4298EE0A700C509B9 /* PentominoOutlines.json */; };
+		A341C2B7298EE0CF00C509B9 /* Solutions.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2B6298EE0CF00C509B9 /* Solutions.json */; };
+		A341C2B9298EE0F100C509B9 /* PuzzleOutlines.json in Resources */ = {isa = PBXBuildFile; fileRef = A341C2B8298EE0F100C509B9 /* PuzzleOutlines.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +49,11 @@
 		A341C289298EDBA300C509B9 /* PentominoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentominoesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A341C28D298EDBA300C509B9 /* PentominoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesUITests.swift; sourceTree = "<group>"; };
 		A341C28F298EDBA300C509B9 /* PentominoesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentominoesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A341C2A8298EDDE100C509B9 /* PuzzleOutlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PuzzleOutlines.json; path = "Pentominoes Assets/JSON/PuzzleOutlines.json"; sourceTree = SOURCE_ROOT; };
-		A341C2A9298EDDE100C509B9 /* Solutions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Solutions.json; path = "Pentominoes Assets/JSON/Solutions.json"; sourceTree = SOURCE_ROOT; };
-		A341C2AA298EDDE100C509B9 /* PentominoOutlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PentominoOutlines.json; path = "Pentominoes Assets/JSON/PentominoOutlines.json"; sourceTree = SOURCE_ROOT; };
-		A341C2AE298EDDF300C509B9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "Pentominoes Assets/Model.swift"; sourceTree = SOURCE_ROOT; };
 		A341C2B0298EDF0B00C509B9 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A341C2B2298EDFDF00C509B9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A341C2B4298EE0A700C509B9 /* PentominoOutlines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PentominoOutlines.json; sourceTree = "<group>"; };
+		A341C2B6298EE0CF00C509B9 /* Solutions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Solutions.json; sourceTree = "<group>"; };
+		A341C2B8298EE0F100C509B9 /* PuzzleOutlines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PuzzleOutlines.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 		A341C29D298EDC9900C509B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A341C2AE298EDDF300C509B9 /* Model.swift */,
+				A341C2B2298EDFDF00C509B9 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 		A341C29F298EDCB500C509B9 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				A341C2AA298EDDE100C509B9 /* PentominoOutlines.json */,
-				A341C2A8298EDDE100C509B9 /* PuzzleOutlines.json */,
-				A341C2A9298EDDE100C509B9 /* Solutions.json */,
+				A341C2B4298EE0A700C509B9 /* PentominoOutlines.json */,
+				A341C2B6298EE0CF00C509B9 /* Solutions.json */,
+				A341C2B8298EE0F100C509B9 /* PuzzleOutlines.json */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -278,11 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A341C2AD298EDDE100C509B9 /* PentominoOutlines.json in Resources */,
+				A341C2B7298EE0CF00C509B9 /* Solutions.json in Resources */,
 				A341C27A298EDBA300C509B9 /* Preview Assets.xcassets in Resources */,
-				A341C2AB298EDDE100C509B9 /* PuzzleOutlines.json in Resources */,
 				A341C277298EDBA300C509B9 /* Assets.xcassets in Resources */,
-				A341C2AC298EDDE100C509B9 /* Solutions.json in Resources */,
+				A341C2B9298EE0F100C509B9 /* PuzzleOutlines.json in Resources */,
+				A341C2B5298EE0A700C509B9 /* PentominoOutlines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A341C2AF298EDDF300C509B9 /* Model.swift in Sources */,
+				A341C2B3298EDFDF00C509B9 /* Model.swift in Sources */,
 				A341C2B1298EDF0B00C509B9 /* GameManager.swift in Sources */,
 				A341C275298EDBA100C509B9 /* ContentView.swift in Sources */,
 				A341C273298EDBA100C509B9 /* PentominoesApp.swift in Sources */,
