@@ -21,6 +21,7 @@ struct PentominosView: Shape {
         for i in outline {
             path.addLine(to: CGPoint(x: i.x*xDelta, y: i.y*yDelta))
         }
+        
         return path
     }
 }

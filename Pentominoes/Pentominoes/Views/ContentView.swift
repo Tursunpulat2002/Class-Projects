@@ -17,21 +17,21 @@ struct ContentView: View {
             PuzzleButtonsView()
                 .padding(60)
                 .offset(y: -290)
-            Grid(columns: 15, rows: 15)
-                .stroke(.black, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
-                .frame(width: 450, height: 450)
-                .offset(x:10 ,y: -270)
+    
             PuzzleView(size: manager.getSize(), outlines: manager.getOutline())
-                .stroke(.white, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
-                .offset(x:10 ,y: -270)
+                    .fill(style: FillStyle(eoFill: true))
+                    .foregroundColor(Color.green)
+                    .offset(x: CGFloat(manager.getPos().x), y: CGFloat(manager.getPos().y))
+            Grid(columns: 15, rows: 15)
+                    .stroke(.black, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+                    .frame(width: 451, height: 451)
+                    .offset(x:10 ,y: -270)
             
+            PieceView(piece: $manager.piece)
             VStack {
                 ButtonsView()
                     .foregroundColor(Color.black)
-                PieceView()
             }
-            .offset(y: 150)
-            .padding()
         }
     }
 }

@@ -13,14 +13,14 @@ struct PuzzleButtonsView: View {
         VStack{
             ForEach(0..<4){i in
                 HStack{
-                    Button(action: {manager.changePuzzle(num: i)}) {
+                    Button(action: {manager.changePuzzle(num: i-1)}) {
                         Image("Board\(i)")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 70, height: 70)
                     }
                     Spacer()
-                    Button(action: {manager.changePuzzle(num: i+4)}) {
+                    Button(action: {manager.changePuzzle(num: i+3)}) {
                         Image("Board\(i+4)")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -32,7 +32,7 @@ struct PuzzleButtonsView: View {
     }
 }
 
-struct PuzzlesView_Previews: PreviewProvider {
+struct PuzzleButtons_Previews: PreviewProvider {
     static var previews: some View {
         PuzzleButtonsView()
             .environmentObject(GameManager())

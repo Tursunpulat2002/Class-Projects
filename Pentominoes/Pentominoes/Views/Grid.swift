@@ -17,15 +17,15 @@ struct Grid: Shape {
         var yDelta : Int {Int(rect.size.height) / rows}
         
         var path = Path()
-        
-        for i in stride(from: 0, to: xDelta*(columns), by: xDelta) {
+        for i in stride(from: 0, to: Int(rect.size.width), by: xDelta) {
             path.move(to: CGPoint(x: CGFloat(i), y: 0))
-            path.addLine(to: CGPoint(x: CGFloat(i), y: rect.size.height-CGFloat(xDelta)))
+            path.addLine(to: CGPoint(x: CGFloat(i), y: CGFloat(rect.size.height)))
         }
-        for i in stride(from: 0, to: yDelta*(rows), by: yDelta) {
+        for i in stride(from: 0, to: Int(rect.size.height), by: yDelta) {
             path.move(to: CGPoint(x: 0, y: CGFloat(i)))
-            path.addLine(to: CGPoint(x: rect.size.width-CGFloat(yDelta), y: CGFloat(i)))
+            path.addLine(to: CGPoint(x: rect.size.width, y: CGFloat(i)))
         }
+        
         return path
     }
 }

@@ -24,11 +24,105 @@ class GameManager: ObservableObject{
         for i in data.pentoData{
             _piece.append(Piece(outline: i))
         }
+    
         piece = _piece
+        
+//        for i in 0..<12{
+//            switch piece[i].outline.name{
+//            case "X":
+//                piece[i].position = Position(x: 180,y: 650)
+//            case "P":
+//                piece[i].position = Position(x: 330,y: 650)
+//            case "F":
+//                piece[i].position = Position(x: 480,y: 650)
+//            case "W":
+//                piece[i].position = Position(x: 630,y: 650)
+//            case "Z":
+//                piece[i].position = Position(x: 180,y: 800)
+//            case "U":
+//                piece[i].position = Position(x: 330,y: 800)
+//            case "V":
+//                piece[i].position = Position(x: 480,y: 800)
+//            case "T":
+//                piece[i].position = Position(x: 630,y: 800)
+//            case "L":
+//                piece[i].position = Position(x: 180,y: 950)
+//            case "Y":
+//                piece[i].position = Position(x: 330,y: 950)
+//            case "N":
+//                piece[i].position = Position(x: 480,y: 950)
+//            case "I":
+//                piece[i].position = Position(x: 630,y: 950)
+//            default:
+//                piece[i].position = Position(x: 0,y: 0)
+//            }
+//        }
     }
     
+//    func setPiecePos(){
+//        for i in 0..<12{
+//            switch piece[i].outline.name{
+//            case "X":
+//                piece[i].position = Position(x: 180,y: 650)
+//            case "P":
+//                piece[i].position = Position(x: 330,y: 650)
+//            case "F":
+//                piece[i].position = Position(x: 480,y: 650)
+//            case "W":
+//                piece[i].position = Position(x: 630,y: 650)
+//            case "Z":
+//                piece[i].position = Position(x: 180,y: 800)
+//            case "U":
+//                piece[i].position = Position(x: 330,y: 800)
+//            case "V":
+//                piece[i].position = Position(x: 480,y: 800)
+//            case "T":
+//                piece[i].position = Position(x: 630,y: 800)
+//            case "L":
+//                piece[i].position = Position(x: 180,y: 950)
+//            case "Y":
+//                piece[i].position = Position(x: 330,y: 950)
+//            case "N":
+//                piece[i].position = Position(x: 480,y: 950)
+//            case "I":
+//                piece[i].position = Position(x: 630,y: 950)
+//            default:
+//                piece[i].position = Position(x: 0,y: 0)
+//            }
+//        }
+//    }
+    
     func changePuzzle(num: Int){
-        name = puzzle[num].name
+        if(num < 0){
+            name = "Blank"
+        }else{
+            name = puzzle[num].name
+        }
+    }
+    
+    func getPos()->Position{
+        var pos = Position()
+        
+        switch name{
+        case "6x10":
+            pos = Position(x: 262, y: 200)
+        case "5x12":
+            pos = Position(x: 232, y: 200)
+        case "OneHole":
+            pos = Position(x: 292, y: 170)
+        case "FourNotches":
+            pos = Position(x: 292, y: 170)
+        case "FourHoles":
+            pos = Position(x: 292, y: 170)
+        case "13Holes":
+            pos = Position(x: 262, y: 170)
+        case "Flower":
+            pos = Position(x: 262, y: 140)
+        default:
+            pos = Position(x: 0,y: 0)
+        }
+        
+        return pos
     }
     
     func getSize()->Size{
@@ -82,40 +176,5 @@ class GameManager: ObservableObject{
         }
         return color
     }
-    
-    //    func getPosition(name: String)->CGPoint{
-    //        var pos: CGPoint
-    //
-    //        switch name{
-    //        case "X":
-    //            pos = CGPoint(x: 50, y: 100)
-    //        case "P":
-    //            pos = CGPoint(x: 100, y: 100)
-    //        case "F":
-    //            pos = CGPoint(x: 150, y: 100)
-    //        case "W":
-    //            pos = CGPoint(x: 200, y: 100)
-    //        case "Z":
-    //            pos = CGPoint(x: -200, y: 200)
-    //        case "U":
-    //            pos = CGPoint(x: -150, y: 200)
-    //        case "V":
-    //            pos = CGPoint(x: -100, y: 200)
-    //        case "T":
-    //            pos = CGPoint(x: -50, y: 200)
-    //        case "L":
-    //            pos = CGPoint(x: -50, y: 300)
-    //        case "Y":
-    //            pos = CGPoint(x: -100, y: 300)
-    //        case "N":
-    //            pos = CGPoint(x: -150, y: 300)
-    //        case "I":
-    //            pos = CGPoint(x: -200, y: 300)
-    //        default:
-    //            pos = CGPoint(x: 0, y: 0)
-    //        }
-    //
-    //        return pos
-    //    }
     
 }

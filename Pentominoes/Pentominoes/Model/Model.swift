@@ -7,6 +7,11 @@
 import Foundation
 
 
+enum Orientation {
+    case up, left, down, right
+    case upMirrored, leftMirrored, downMirrored, rightMirrored
+}
+
 //Mark:- Shapes models
 struct Point:Codable {
     let x : Int
