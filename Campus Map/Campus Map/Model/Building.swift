@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Building : Codable, Identifiable {
+struct Building : Codable, Identifiable, Equatable {
     var latitude: Double
     var longitude: Double
     var name : String
     var opp_bldg_code : Int
-    var year_constructed : Int
+    var photo : String?
+    var year_constructed : Int?
     var id : String {name}
     
     static var buildings = {
@@ -21,7 +22,7 @@ struct Building : Codable, Identifiable {
         do {
             let data = try Data(contentsOf: buildingURL)
             let decoder = JSONDecoder()
-            buildings = try decoder.decode([Building].self, from: data)
+            buildings = try decoder.decode([Building].self, from: data).sorted{ $0.name < $1.name }
         } catch   {
             print("Error decoding Restaurants: \(error)")
             buildings = []

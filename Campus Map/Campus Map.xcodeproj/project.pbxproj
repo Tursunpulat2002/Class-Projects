@@ -18,6 +18,11 @@
 		A328A01A29A2B00D00736839 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A01929A2B00D00736839 /* Building.swift */; };
 		A328A01C29A2B0E900736839 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A01B29A2B0E900736839 /* LocationModel.swift */; };
 		A328A01E29A2B18D00736839 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A01D29A2B18D00736839 /* Spot.swift */; };
+		A328A02029A2BA0600736839 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A01F29A2BA0600736839 /* MapManager.swift */; };
+		A328A02229A2BBE200736839 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02129A2BBE200736839 /* Place.swift */; };
+		A328A02729A2C40E00736839 /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02629A2C40E00736839 /* CampusMapView.swift */; };
+		A328A02929A2C4BB00736839 /* CampusMapView+Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */; };
+		A328A02B29A2C56800736839 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02A29A2C56800736839 /* PlaceDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		A328A01929A2B00D00736839 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		A328A01B29A2B0E900736839 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		A328A01D29A2B18D00736839 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		A328A01F29A2BA0600736839 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		A328A02129A2BBE200736839 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		A328A02629A2C40E00736839 /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
+		A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CampusMapView+Annotations.swift"; sourceTree = "<group>"; };
+		A328A02A29A2C56800736839 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				A3289FEC29A295AA00736839 /* ContentView.swift */,
+				A328A02629A2C40E00736839 /* CampusMapView.swift */,
+				A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */,
+				A328A02A29A2C56800736839 /* PlaceDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +172,8 @@
 		A328A01629A295EA00736839 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A328A01F29A2BA0600736839 /* MapManager.swift */,
+				A328A02129A2BBE200736839 /* Place.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -294,10 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A328A02929A2C4BB00736839 /* CampusMapView+Annotations.swift in Sources */,
+				A328A02B29A2C56800736839 /* PlaceDetailsView.swift in Sources */,
+				A328A02729A2C40E00736839 /* CampusMapView.swift in Sources */,
 				A328A01C29A2B0E900736839 /* LocationModel.swift in Sources */,
 				A3289FED29A295AA00736839 /* ContentView.swift in Sources */,
 				A328A01E29A2B18D00736839 /* Spot.swift in Sources */,
 				A328A01A29A2B00D00736839 /* Building.swift in Sources */,
+				A328A02029A2BA0600736839 /* MapManager.swift in Sources */,
+				A328A02229A2BBE200736839 /* Place.swift in Sources */,
 				A3289FEB29A295AA00736839 /* Campus_MapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

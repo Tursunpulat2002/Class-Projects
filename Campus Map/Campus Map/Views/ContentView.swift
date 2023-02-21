@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var manager : MapManager
     var body: some View {
-        VStack {
-            
+        return NavigationStack{
+            CampusMapView()
+                        .ignoresSafeArea()
+                        .sheet(isPresented: $manager.showSheet, content: {
+                            PlaceDetailsView(building: manager.selectedBuilding!, place: manager.selectedPlace)
+                        })
+                        .confirmationDialog("spot", isPresented: $manager.showConfirmation, presenting: manager.selectedPlace) { place in
+                               Button("Details") {
+                                   manager.selectedPlace = place
+                                   manager.showSheet = true
+                               }
+                           } message: { place in
+                               Text("\(place.title ?? "unknown")")
+                        }
         }
     }
 }
@@ -18,5 +31,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(MapManager())
     }
 }
