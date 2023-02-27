@@ -23,6 +23,8 @@
 		A328A02729A2C40E00736839 /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02629A2C40E00736839 /* CampusMapView.swift */; };
 		A328A02929A2C4BB00736839 /* CampusMapView+Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */; };
 		A328A02B29A2C56800736839 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02A29A2C56800736839 /* PlaceDetailsView.swift */; };
+		A3556FF429A95DDF00047525 /* MapManager+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3556FF329A95DDF00047525 /* MapManager+Location.swift */; };
+		A3556FF729AC1C5400047525 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3556FF629AC1C5400047525 /* RouteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		A328A02629A2C40E00736839 /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
 		A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CampusMapView+Annotations.swift"; sourceTree = "<group>"; };
 		A328A02A29A2C56800736839 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
+		A3556FF329A95DDF00047525 /* MapManager+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapManager+Location.swift"; sourceTree = "<group>"; };
+		A3556FF529A964C300047525 /* SCWalk.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SCWalk.gpx; sourceTree = "<group>"; };
+		A3556FF629AC1C5400047525 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +159,7 @@
 				A328A02629A2C40E00736839 /* CampusMapView.swift */,
 				A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */,
 				A328A02A29A2C56800736839 /* PlaceDetailsView.swift */,
+				A3556FF629AC1C5400047525 /* RouteDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 				A328A01929A2B00D00736839 /* Building.swift */,
 				A328A01B29A2B0E900736839 /* LocationModel.swift */,
 				A328A01D29A2B18D00736839 /* Spot.swift */,
+				A3556FF529A964C300047525 /* SCWalk.gpx */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			children = (
 				A328A01F29A2BA0600736839 /* MapManager.swift */,
 				A328A02129A2BBE200736839 /* Place.swift */,
+				A3556FF329A95DDF00047525 /* MapManager+Location.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -310,11 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A328A02929A2C4BB00736839 /* CampusMapView+Annotations.swift in Sources */,
+				A3556FF729AC1C5400047525 /* RouteDetailView.swift in Sources */,
 				A328A02B29A2C56800736839 /* PlaceDetailsView.swift in Sources */,
 				A328A02729A2C40E00736839 /* CampusMapView.swift in Sources */,
 				A328A01C29A2B0E900736839 /* LocationModel.swift in Sources */,
 				A3289FED29A295AA00736839 /* ContentView.swift in Sources */,
 				A328A01E29A2B18D00736839 /* Spot.swift in Sources */,
+				A3556FF429A95DDF00047525 /* MapManager+Location.swift in Sources */,
 				A328A01A29A2B00D00736839 /* Building.swift in Sources */,
 				A328A02029A2BA0600736839 /* MapManager.swift in Sources */,
 				A328A02229A2BBE200736839 /* Place.swift in Sources */,
@@ -480,6 +490,7 @@
 				DEVELOPMENT_TEAM = N6AXDZJXWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to track you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -509,6 +520,7 @@
 				DEVELOPMENT_TEAM = N6AXDZJXWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to track you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -39,6 +39,7 @@ extension CampusMapView {
                     } label: {
                         Text("Details")
                     }
+                    
                 }
         }
     }

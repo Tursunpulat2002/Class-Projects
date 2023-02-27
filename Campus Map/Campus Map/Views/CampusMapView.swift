@@ -13,9 +13,21 @@ struct CampusMapView: View {
     @EnvironmentObject var manager : MapManager
     @State var selectedSpot : Spot?
     @State private var isShowingSheet = false
+    @State var builds = Building.buildings
     var body: some View {
         ZStack(alignment: Alignment.bottomTrailing){
-            Map(coordinateRegion: $manager.region, annotationItems: manager.places, annotationContent: annotationFor(place:))
+            Map(coordinateRegion: $manager.region, showsUserLocation: true, annotationItems: manager.places, annotationContent: annotationFor(place:))
+            
+            Button {
+                manager.center()
+            } label: {
+                Image(systemName: "lasso")
+                Text("Center")
+            }.disabled(manager.isEQ)
+                .frame(width: 100, height: 50)
+                .padding()
+                .position(x:70, y: 760)
+                    
             
             Button{
                 for i in 0..<manager.places.count{
@@ -59,10 +71,32 @@ struct CampusMapView: View {
             .padding()
             .sheet(isPresented: $isShowingSheet) {
                 NavigationStack{
+                    
                     Button("Dismiss"){
                         isShowingSheet = false
+                        manager.showAll()
                     }.padding(.top)
-                    List(Building.buildings){ b in
+                    HStack{
+                        Button("All"){
+                            builds = Building.buildings.filter{ build in
+                                return true
+                            }
+                        }.padding()
+                        
+                        Button("Favorites"){
+                            builds = Building.buildings.filter({ building in
+                                let index = Building.buildings.firstIndex(of: building)
+                                return manager.isFavorited[index!]
+                            })
+                        }.padding()
+                        
+                        Button("Nearby"){
+                            builds = manager.isNearby()
+                        }.padding()
+                        
+                    }
+                    
+                    List(builds){ b in
                         let index = Building.buildings.firstIndex(of: b)
                         Button(b.name){
                             manager.selectedBuilding = b

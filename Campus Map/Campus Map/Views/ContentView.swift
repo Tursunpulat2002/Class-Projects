@@ -16,11 +16,22 @@ struct ContentView: View {
                         .sheet(isPresented: $manager.showSheet, content: {
                             PlaceDetailsView(building: manager.selectedBuilding!, place: manager.selectedPlace)
                         })
+                        .sheet(isPresented: $manager.showRouteSheet, content: {
+                            RouteDetailView()
+                        })
                         .confirmationDialog("spot", isPresented: $manager.showConfirmation, presenting: manager.selectedPlace) { place in
                                Button("Details") {
                                    manager.selectedPlace = place
                                    manager.showSheet = true
                                }
+                            
+                                Button{
+                                    manager.selectedPlace = place
+                                    manager.provideRoute()
+                                    manager.showRouteSheet = true
+                                } label: {
+                                    Text("Route Details")
+                                }
                            } message: { place in
                                Text("\(place.title ?? "unknown")")
                         }
