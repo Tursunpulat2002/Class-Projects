@@ -25,6 +25,9 @@
 		A328A02B29A2C56800736839 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A02A29A2C56800736839 /* PlaceDetailsView.swift */; };
 		A3556FF429A95DDF00047525 /* MapManager+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3556FF329A95DDF00047525 /* MapManager+Location.swift */; };
 		A3556FF729AC1C5400047525 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3556FF629AC1C5400047525 /* RouteDetailView.swift */; };
+		A390BC0229BFD1AD00D0AE5D /* UIMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390BC0129BFD1AD00D0AE5D /* UIMap.swift */; };
+		A390BC0429BFD2EC00D0AE5D /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390BC0329BFD2EC00D0AE5D /* MapCoordinator.swift */; };
+		A390BC0629BFF26300D0AE5D /* DroppedPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390BC0529BFF26300D0AE5D /* DroppedPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		A3556FF329A95DDF00047525 /* MapManager+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapManager+Location.swift"; sourceTree = "<group>"; };
 		A3556FF529A964C300047525 /* SCWalk.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SCWalk.gpx; sourceTree = "<group>"; };
 		A3556FF629AC1C5400047525 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
+		A390BC0129BFD1AD00D0AE5D /* UIMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMap.swift; sourceTree = "<group>"; };
+		A390BC0329BFD2EC00D0AE5D /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		A390BC0529BFF26300D0AE5D /* DroppedPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppedPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,8 @@
 				A328A02829A2C4BB00736839 /* CampusMapView+Annotations.swift */,
 				A328A02A29A2C56800736839 /* PlaceDetailsView.swift */,
 				A3556FF629AC1C5400047525 /* RouteDetailView.swift */,
+				A390BC0129BFD1AD00D0AE5D /* UIMap.swift */,
+				A390BC0329BFD2EC00D0AE5D /* MapCoordinator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +190,7 @@
 				A328A01F29A2BA0600736839 /* MapManager.swift */,
 				A328A02129A2BBE200736839 /* Place.swift */,
 				A3556FF329A95DDF00047525 /* MapManager+Location.swift */,
+				A390BC0529BFF26300D0AE5D /* DroppedPin.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -322,9 +331,12 @@
 				A328A02B29A2C56800736839 /* PlaceDetailsView.swift in Sources */,
 				A328A02729A2C40E00736839 /* CampusMapView.swift in Sources */,
 				A328A01C29A2B0E900736839 /* LocationModel.swift in Sources */,
+				A390BC0629BFF26300D0AE5D /* DroppedPin.swift in Sources */,
 				A3289FED29A295AA00736839 /* ContentView.swift in Sources */,
 				A328A01E29A2B18D00736839 /* Spot.swift in Sources */,
+				A390BC0229BFD1AD00D0AE5D /* UIMap.swift in Sources */,
 				A3556FF429A95DDF00047525 /* MapManager+Location.swift in Sources */,
+				A390BC0429BFD2EC00D0AE5D /* MapCoordinator.swift in Sources */,
 				A328A01A29A2B00D00736839 /* Building.swift in Sources */,
 				A328A02029A2BA0600736839 /* MapManager.swift in Sources */,
 				A328A02229A2BBE200736839 /* Place.swift in Sources */,

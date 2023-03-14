@@ -23,6 +23,11 @@ class MapManager: NSObject, ObservableObject{
         }
     }
     
+    @Published var mapType = 0
+    @Published var trackType = false
+    @Published var routeLines : MKPolyline?
+    @Published var unplot = false
+    
     @Published var selectedPlace : Place?
     
     @Published var showConfirmation = false
@@ -139,14 +144,6 @@ class MapManager: NSObject, ObservableObject{
         region.center.latitude = maxLat-(0.5*(maxLat-minLat))
     }
     
-//    func getBearing(){
-//        let x = cos(self.selectedPlace!.coordinate.latitude)*sin((self.selectedPlace!.coordinate.longitude)-self.userRecentLocation!.coordinate.longitude)
-//        let y = cos(self.userRecentLocation!.coordinate.latitude)*sin(self.selectedPlace!.coordinate.latitude)-sin(self.userRecentLocation!.coordinate.latitude)*cos(self.selectedPlace!.coordinate.latitude)*cos((self.selectedPlace!.coordinate.longitude)-self.userRecentLocation!.coordinate.longitude)
-//
-//        let b = atan2(x, y) * (180/Double.pi)
-//        self.heading = b
-//    }
-    
     func degreesToRadians(degrees: Double) -> Double { return degrees * .pi / 180.0 }
     func radiansToDegrees(radians: Double) -> Double { return radians * 180.0 / .pi }
 
@@ -189,6 +186,7 @@ class MapManager: NSObject, ObservableObject{
                 formatter.allowedUnits = [.minute, .second]
                 let eta = route.expectedTravelTime
                 self.ETA = formatter.string(from: eta)!
+                self.routeLines = route.polyline
             }
         }
     }
