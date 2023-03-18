@@ -7,17 +7,45 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SectionHeaderView : View {
+    let title : String
     var body: some View {
-        VStack {
-            
+        HStack{
+            Text(title)
+                .font(.title)
+                .bold()
         }
-        .padding()
+        .foregroundColor(.cyan)
+        .frame(maxWidth: .infinity, alignment: .center)
+    }
+}
+
+struct ContentView: View {
+    @EnvironmentObject var manager: PokemonManager
+    var body: some View {
+        ZStack {
+            Color("PokemonColor").ignoresSafeArea()
+            
+            NavigationStack{
+                List{
+                    Section(header: SectionHeaderView(title: "Pokédex")){
+                        ForEach(manager.pokemon, id: \.self){i in
+                            NavigationLink{
+                                PokemonDetailsView(pokemon: i)
+                            }label: {
+                                PokemonRowView(pokemon: i)
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(PokemonManager())
     }
 }
