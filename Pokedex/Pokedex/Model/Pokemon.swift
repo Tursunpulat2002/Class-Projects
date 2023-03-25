@@ -14,17 +14,18 @@ struct Pokemon: Identifiable, Encodable, Hashable{
     let weaknesses: [PokemonType]
     let height: Double
     let weight: Double
-    let previousEvol: [Int]?
-    let nextEvol: [Int]?
+    let previousEvol: [Int]
+    let nextEvol: [Int]
+    var isCaptured: Bool
     
     enum CodingKeys : String, CodingKey {
         case pokemonType = "types"
         case previousEvol = "prev_evolution"
         case nextEvol = "next_evolution"
-        case id, name, weaknesses, height, weight
+        case id, name, weaknesses, height, weight, isCaptured
     }
     
-    static let standard = Pokemon(id: 1, name: "John", pokemonType: [PokemonType.dragon], weaknesses: [PokemonType.bug], height: 4.5, weight: 6.7, previousEvol: [], nextEvol: [])
+    static let standard = Pokemon(id: 1, name: "John", pokemonType: [PokemonType.dragon], weaknesses: [PokemonType.bug], height: 4.5, weight: 6.7, previousEvol: [], nextEvol: [], isCaptured: false)
 }
 
 extension Pokemon: Decodable{
@@ -36,7 +37,8 @@ extension Pokemon: Decodable{
         weaknesses = try values.decode([PokemonType].self, forKey: .weaknesses)
         height = try values.decode(Double.self, forKey: .height)
         weight = try values.decode(Double.self, forKey: .weight)
-        previousEvol = try values.decodeIfPresent([Int].self, forKey: .previousEvol)
-        nextEvol = try values.decodeIfPresent([Int].self, forKey: .nextEvol)
+        previousEvol = try values.decodeIfPresent([Int].self, forKey: .previousEvol) ?? []
+        nextEvol = try values.decodeIfPresent([Int].self, forKey: .nextEvol) ?? []
+        isCaptured = try values.decodeIfPresent(Bool.self, forKey: .isCaptured) ?? false
     }
 }

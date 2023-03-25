@@ -13,6 +13,11 @@ struct PokemonRowView: View {
         HStack{
             Text("\(pokemon.id)")
             Text(pokemon.name)
+            if (pokemon.isCaptured){
+                Image(systemName: "lasso.sparkles")
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(Color.black)
+            }
             Spacer()
             Image(String.threeDigits(pokemon.id))
                 .resizable()
