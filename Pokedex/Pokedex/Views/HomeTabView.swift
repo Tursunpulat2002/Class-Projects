@@ -21,12 +21,16 @@ struct HomeTabView: View {
                             .font(.headline)
                             .bold()
                             .padding()
-                        ForEach(manager.pokemon){ p in
-                            if (p.isCaptured){
-                                NavigationLink{
-                                    PokemonDetailsView(pokemon: p)
-                                }label: {
-                                    PokemonCardView(pokemon: p)
+                        ScrollView(.horizontal, showsIndicators: false){
+                            HStack{
+                                ForEach(manager.pokemon){ p in
+                                    if (p.isCaptured){
+                                        NavigationLink{
+                                            PokemonDetailsView(pokemon: p)
+                                        }label: {
+                                            PokemonCardView(pokemon: p)
+                                        }
+                                    }
                                 }
                             }
                         }
