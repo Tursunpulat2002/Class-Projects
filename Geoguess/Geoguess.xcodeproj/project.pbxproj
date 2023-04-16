@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DFD0F5FF323F9B1052A0D69 /* libPods-Geoguess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEEDB8817A311C7D4BE0328 /* libPods-Geoguess.a */; };
+		3E1527B878A1CDC80862C66C /* libPods-GeoguessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471ECF0BF5ED3E83F63316AB /* libPods-GeoguessTests.a */; };
+		80E4E5D90E5B1AD739BF9510 /* libPods-Geoguess-GeoguessUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6DD3235B61511AC840B899 /* libPods-Geoguess-GeoguessUITests.a */; };
+		A3371C3829EB624800451CD7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C3729EB624800451CD7 /* GameManager.swift */; };
+		A3AC686329E9F4A300D9C16A /* GeoguessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */; };
+		A3AC686529E9F4A300D9C16A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC686429E9F4A300D9C16A /* ContentView.swift */; };
+		A3AC686729E9F4A400D9C16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3AC686629E9F4A400D9C16A /* Assets.xcassets */; };
+		A3AC686A29E9F4A400D9C16A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3AC686929E9F4A400D9C16A /* Preview Assets.xcassets */; };
+		A3AC687429E9F4A400D9C16A /* GeoguessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC687329E9F4A400D9C16A /* GeoguessTests.swift */; };
+		A3AC687E29E9F4A400D9C16A /* GeoguessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC687D29E9F4A400D9C16A /* GeoguessUITests.swift */; };
+		A3AC688029E9F4A400D9C16A /* GeoguessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC687F29E9F4A400D9C16A /* GeoguessUITestsLaunchTests.swift */; };
+		A3AC689029EB3BA500D9C16A /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC688F29EB3BA500D9C16A /* HomeScreenView.swift */; };
+		A3AC689229EB3FCA00D9C16A /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC689129EB3FCA00D9C16A /* ButtonsView.swift */; };
+		A3AC689429EB436500D9C16A /* SoloGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC689329EB436500D9C16A /* SoloGameView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3AC687029E9F4A400D9C16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3AC685729E9F4A300D9C16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3AC685E29E9F4A300D9C16A;
+			remoteInfo = Geoguess;
+		};
+		A3AC687A29E9F4A400D9C16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3AC685729E9F4A300D9C16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3AC685E29E9F4A300D9C16A;
+			remoteInfo = Geoguess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26CEAB067A10351D88DE3140 /* Pods-Geoguess-GeoguessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geoguess-GeoguessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Geoguess-GeoguessUITests/Pods-Geoguess-GeoguessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		471ECF0BF5ED3E83F63316AB /* libPods-GeoguessTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoguessTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7D6CFCAC247578C05DFDD1 /* Pods-Geoguess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geoguess.release.xcconfig"; path = "Target Support Files/Pods-Geoguess/Pods-Geoguess.release.xcconfig"; sourceTree = "<group>"; };
+		6311BA72ECE1ACB3189354FC /* Pods-Geoguess-GeoguessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geoguess-GeoguessUITests.release.xcconfig"; path = "Target Support Files/Pods-Geoguess-GeoguessUITests/Pods-Geoguess-GeoguessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D3F13F9D71F273C9EBB8CC4 /* Pods-GeoguessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoguessTests.release.xcconfig"; path = "Target Support Files/Pods-GeoguessTests/Pods-GeoguessTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BEEDB8817A311C7D4BE0328 /* libPods-Geoguess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Geoguess.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3371C3729EB624800451CD7 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A3AC685F29E9F4A300D9C16A /* Geoguess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geoguess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoguessApp.swift; sourceTree = "<group>"; };
+		A3AC686429E9F4A300D9C16A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3AC686629E9F4A400D9C16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3AC686929E9F4A400D9C16A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3AC686F29E9F4A400D9C16A /* GeoguessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoguessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3AC687329E9F4A400D9C16A /* GeoguessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoguessTests.swift; sourceTree = "<group>"; };
+		A3AC687929E9F4A400D9C16A /* GeoguessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoguessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3AC687D29E9F4A400D9C16A /* GeoguessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoguessUITests.swift; sourceTree = "<group>"; };
+		A3AC687F29E9F4A400D9C16A /* GeoguessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoguessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3AC688F29EB3BA500D9C16A /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		A3AC689129EB3FCA00D9C16A /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		A3AC689329EB436500D9C16A /* SoloGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloGameView.swift; sourceTree = "<group>"; };
+		AA6DD3235B61511AC840B899 /* libPods-Geoguess-GeoguessUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Geoguess-GeoguessUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75D002DA06854ECE11B1BAD /* Pods-Geoguess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geoguess.debug.xcconfig"; path = "Target Support Files/Pods-Geoguess/Pods-Geoguess.debug.xcconfig"; sourceTree = "<group>"; };
+		F410A8A4B6FFD88C8183CA3F /* Pods-GeoguessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoguessTests.debug.xcconfig"; path = "Target Support Files/Pods-GeoguessTests/Pods-GeoguessTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3AC685C29E9F4A300D9C16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFD0F5FF323F9B1052A0D69 /* libPods-Geoguess.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3AC686C29E9F4A400D9C16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1527B878A1CDC80862C66C /* libPods-GeoguessTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3AC687629E9F4A400D9C16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E4E5D90E5B1AD739BF9510 /* libPods-Geoguess-GeoguessUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B258FC57587EDDBEA63CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BEEDB8817A311C7D4BE0328 /* libPods-Geoguess.a */,
+				AA6DD3235B61511AC840B899 /* libPods-Geoguess-GeoguessUITests.a */,
+				471ECF0BF5ED3E83F63316AB /* libPods-GeoguessTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42CD1BD503387A0A87E1AA74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D75D002DA06854ECE11B1BAD /* Pods-Geoguess.debug.xcconfig */,
+				5D7D6CFCAC247578C05DFDD1 /* Pods-Geoguess.release.xcconfig */,
+				26CEAB067A10351D88DE3140 /* Pods-Geoguess-GeoguessUITests.debug.xcconfig */,
+				6311BA72ECE1ACB3189354FC /* Pods-Geoguess-GeoguessUITests.release.xcconfig */,
+				F410A8A4B6FFD88C8183CA3F /* Pods-GeoguessTests.debug.xcconfig */,
+				6D3F13F9D71F273C9EBB8CC4 /* Pods-GeoguessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3AC685629E9F4A300D9C16A = {
+			isa = PBXGroup;
+			children = (
+				A3AC686129E9F4A300D9C16A /* Geoguess */,
+				A3AC687229E9F4A400D9C16A /* GeoguessTests */,
+				A3AC687C29E9F4A400D9C16A /* GeoguessUITests */,
+				A3AC686029E9F4A300D9C16A /* Products */,
+				42CD1BD503387A0A87E1AA74 /* Pods */,
+				03B258FC57587EDDBEA63CE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3AC686029E9F4A300D9C16A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC685F29E9F4A300D9C16A /* Geoguess.app */,
+				A3AC686F29E9F4A400D9C16A /* GeoguessTests.xctest */,
+				A3AC687929E9F4A400D9C16A /* GeoguessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3AC686129E9F4A300D9C16A /* Geoguess */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */,
+				A3AC686429E9F4A300D9C16A /* ContentView.swift */,
+				A3AC689529EB5C4700D9C16A /* Other */,
+				A3AC688E29EB3B5800D9C16A /* Model */,
+				A3AC688D29EB3B5100D9C16A /* View-Model */,
+				A3AC688C29EB3B4900D9C16A /* Views */,
+				A3AC686629E9F4A400D9C16A /* Assets.xcassets */,
+				A3AC686829E9F4A400D9C16A /* Preview Content */,
+			);
+			path = Geoguess;
+			sourceTree = "<group>";
+		};
+		A3AC686829E9F4A400D9C16A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC686929E9F4A400D9C16A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3AC687229E9F4A400D9C16A /* GeoguessTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC687329E9F4A400D9C16A /* GeoguessTests.swift */,
+			);
+			path = GeoguessTests;
+			sourceTree = "<group>";
+		};
+		A3AC687C29E9F4A400D9C16A /* GeoguessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC687D29E9F4A400D9C16A /* GeoguessUITests.swift */,
+				A3AC687F29E9F4A400D9C16A /* GeoguessUITestsLaunchTests.swift */,
+			);
+			path = GeoguessUITests;
+			sourceTree = "<group>";
+		};
+		A3AC688C29EB3B4900D9C16A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC688F29EB3BA500D9C16A /* HomeScreenView.swift */,
+				A3AC689129EB3FCA00D9C16A /* ButtonsView.swift */,
+				A3AC689329EB436500D9C16A /* SoloGameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3AC688D29EB3B5100D9C16A /* View-Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3371C3729EB624800451CD7 /* GameManager.swift */,
+			);
+			path = "View-Model";
+			sourceTree = "<group>";
+		};
+		A3AC688E29EB3B5800D9C16A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3AC689529EB5C4700D9C16A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3AC685E29E9F4A300D9C16A /* Geoguess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3AC688329E9F4A400D9C16A /* Build configuration list for PBXNativeTarget "Geoguess" */;
+			buildPhases = (
+				5427D72245745F53BB03898E /* [CP] Check Pods Manifest.lock */,
+				A3AC685B29E9F4A300D9C16A /* Sources */,
+				A3AC685C29E9F4A300D9C16A /* Frameworks */,
+				A3AC685D29E9F4A300D9C16A /* Resources */,
+				942B829DE98C433735CDA21A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geoguess;
+			productName = Geoguess;
+			productReference = A3AC685F29E9F4A300D9C16A /* Geoguess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3AC686E29E9F4A400D9C16A /* GeoguessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3AC688629E9F4A400D9C16A /* Build configuration list for PBXNativeTarget "GeoguessTests" */;
+			buildPhases = (
+				43F99F3B8E32E9074C5A11AA /* [CP] Check Pods Manifest.lock */,
+				A3AC686B29E9F4A400D9C16A /* Sources */,
+				A3AC686C29E9F4A400D9C16A /* Frameworks */,
+				A3AC686D29E9F4A400D9C16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3AC687129E9F4A400D9C16A /* PBXTargetDependency */,
+			);
+			name = GeoguessTests;
+			productName = GeoguessTests;
+			productReference = A3AC686F29E9F4A400D9C16A /* GeoguessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3AC687829E9F4A400D9C16A /* GeoguessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3AC688929E9F4A400D9C16A /* Build configuration list for PBXNativeTarget "GeoguessUITests" */;
+			buildPhases = (
+				F7C0995AAE2E641362021394 /* [CP] Check Pods Manifest.lock */,
+				A3AC687529E9F4A400D9C16A /* Sources */,
+				A3AC687629E9F4A400D9C16A /* Frameworks */,
+				A3AC687729E9F4A400D9C16A /* Resources */,
+				50E6E64B39D72D790563BD30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3AC687B29E9F4A400D9C16A /* PBXTargetDependency */,
+			);
+			name = GeoguessUITests;
+			productName = GeoguessUITests;
+			productReference = A3AC687929E9F4A400D9C16A /* GeoguessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3AC685729E9F4A300D9C16A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A3AC685E29E9F4A300D9C16A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A3AC686E29E9F4A400D9C16A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A3AC685E29E9F4A300D9C16A;
+					};
+					A3AC687829E9F4A400D9C16A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A3AC685E29E9F4A300D9C16A;
+					};
+				};
+			};
+			buildConfigurationList = A3AC685A29E9F4A300D9C16A /* Build configuration list for PBXProject "Geoguess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3AC685629E9F4A300D9C16A;
+			productRefGroup = A3AC686029E9F4A300D9C16A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3AC685E29E9F4A300D9C16A /* Geoguess */,
+				A3AC686E29E9F4A400D9C16A /* GeoguessTests */,
+				A3AC687829E9F4A400D9C16A /* GeoguessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3AC685D29E9F4A300D9C16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC686A29E9F4A400D9C16A /* Preview Assets.xcassets in Resources */,
+				A3AC686729E9F4A400D9C16A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3AC686D29E9F4A400D9C16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3AC687729E9F4A400D9C16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43F99F3B8E32E9074C5A11AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoguessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E6E64B39D72D790563BD30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geoguess-GeoguessUITests/Pods-Geoguess-GeoguessUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geoguess-GeoguessUITests/Pods-Geoguess-GeoguessUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Geoguess-GeoguessUITests/Pods-Geoguess-GeoguessUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5427D72245745F53BB03898E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Geoguess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		942B829DE98C433735CDA21A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geoguess/Pods-Geoguess-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geoguess/Pods-Geoguess-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Geoguess/Pods-Geoguess-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C0995AAE2E641362021394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Geoguess-GeoguessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3AC685B29E9F4A300D9C16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC689029EB3BA500D9C16A /* HomeScreenView.swift in Sources */,
+				A3371C3829EB624800451CD7 /* GameManager.swift in Sources */,
+				A3AC686529E9F4A300D9C16A /* ContentView.swift in Sources */,
+				A3AC689229EB3FCA00D9C16A /* ButtonsView.swift in Sources */,
+				A3AC686329E9F4A300D9C16A /* GeoguessApp.swift in Sources */,
+				A3AC689429EB436500D9C16A /* SoloGameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3AC686B29E9F4A400D9C16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC687429E9F4A400D9C16A /* GeoguessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3AC687529E9F4A400D9C16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC688029E9F4A400D9C16A /* GeoguessUITestsLaunchTests.swift in Sources */,
+				A3AC687E29E9F4A400D9C16A /* GeoguessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3AC687129E9F4A400D9C16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3AC685E29E9F4A300D9C16A /* Geoguess */;
+			targetProxy = A3AC687029E9F4A400D9C16A /* PBXContainerItemProxy */;
+		};
+		A3AC687B29E9F4A400D9C16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3AC685E29E9F4A300D9C16A /* Geoguess */;
+			targetProxy = A3AC687A29E9F4A400D9C16A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3AC688129E9F4A400D9C16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3AC688229E9F4A400D9C16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3AC688429E9F4A400D9C16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75D002DA06854ECE11B1BAD /* Pods-Geoguess.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Geoguess/Preview Content\"";
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GeoGuess;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.Geoguess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3AC688529E9F4A400D9C16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7D6CFCAC247578C05DFDD1 /* Pods-Geoguess.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Geoguess/Preview Content\"";
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GeoGuess;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.Geoguess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3AC688729E9F4A400D9C16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F410A8A4B6FFD88C8183CA3F /* Pods-GeoguessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.GeoguessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geoguess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geoguess";
+			};
+			name = Debug;
+		};
+		A3AC688829E9F4A400D9C16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D3F13F9D71F273C9EBB8CC4 /* Pods-GeoguessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.GeoguessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geoguess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geoguess";
+			};
+			name = Release;
+		};
+		A3AC688A29E9F4A400D9C16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CEAB067A10351D88DE3140 /* Pods-Geoguess-GeoguessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.GeoguessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Geoguess;
+			};
+			name = Debug;
+		};
+		A3AC688B29E9F4A400D9C16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6311BA72ECE1ACB3189354FC /* Pods-Geoguess-GeoguessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6AXDZJXWJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.tro5079.GeoguessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Geoguess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3AC685A29E9F4A300D9C16A /* Build configuration list for PBXProject "Geoguess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3AC688129E9F4A400D9C16A /* Debug */,
+				A3AC688229E9F4A400D9C16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3AC688329E9F4A400D9C16A /* Build configuration list for PBXNativeTarget "Geoguess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3AC688429E9F4A400D9C16A /* Debug */,
+				A3AC688529E9F4A400D9C16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3AC688629E9F4A400D9C16A /* Build configuration list for PBXNativeTarget "GeoguessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3AC688729E9F4A400D9C16A /* Debug */,
+				A3AC688829E9F4A400D9C16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3AC688929E9F4A400D9C16A /* Build configuration list for PBXNativeTarget "GeoguessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3AC688A29E9F4A400D9C16A /* Debug */,
+				A3AC688B29E9F4A400D9C16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3AC685729E9F4A300D9C16A /* Project object */;
+}
