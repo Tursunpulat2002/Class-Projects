@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct SoloGameView: View {
+    @EnvironmentObject var manager : GameManager
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            GMSMap(manager: manager)
+                .ignoresSafeArea()
+        }
     }
 }
 
 struct SoloGameView_Previews: PreviewProvider {
     static var previews: some View {
         SoloGameView()
+            .environmentObject(GameManager())
     }
 }

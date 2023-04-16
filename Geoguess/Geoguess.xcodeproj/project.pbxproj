@@ -11,6 +11,9 @@
 		3E1527B878A1CDC80862C66C /* libPods-GeoguessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471ECF0BF5ED3E83F63316AB /* libPods-GeoguessTests.a */; };
 		80E4E5D90E5B1AD739BF9510 /* libPods-Geoguess-GeoguessUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6DD3235B61511AC840B899 /* libPods-Geoguess-GeoguessUITests.a */; };
 		A3371C3829EB624800451CD7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C3729EB624800451CD7 /* GameManager.swift */; };
+		A3371C3B29EC7FCB00451CD7 /* GMSMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C3A29EC7FCB00451CD7 /* GMSMap.swift */; };
+		A3371C3D29EC803A00451CD7 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C3C29EC803A00451CD7 /* MapCoordinator.swift */; };
+		A3371C3F29EC826300451CD7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C3E29EC826300451CD7 /* GameModel.swift */; };
 		A3AC686329E9F4A300D9C16A /* GeoguessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */; };
 		A3AC686529E9F4A300D9C16A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC686429E9F4A300D9C16A /* ContentView.swift */; };
 		A3AC686729E9F4A400D9C16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3AC686629E9F4A400D9C16A /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		6D3F13F9D71F273C9EBB8CC4 /* Pods-GeoguessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoguessTests.release.xcconfig"; path = "Target Support Files/Pods-GeoguessTests/Pods-GeoguessTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BEEDB8817A311C7D4BE0328 /* libPods-Geoguess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Geoguess.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3371C3729EB624800451CD7 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A3371C3A29EC7FCB00451CD7 /* GMSMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMap.swift; sourceTree = "<group>"; };
+		A3371C3C29EC803A00451CD7 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		A3371C3E29EC826300451CD7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		A3AC685F29E9F4A300D9C16A /* Geoguess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geoguess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoguessApp.swift; sourceTree = "<group>"; };
 		A3AC686429E9F4A300D9C16A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +123,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A3371C3929EC7F6100451CD7 /* GMS Map */ = {
+			isa = PBXGroup;
+			children = (
+				A3371C3A29EC7FCB00451CD7 /* GMSMap.swift */,
+				A3371C3C29EC803A00451CD7 /* MapCoordinator.swift */,
+			);
+			path = "GMS Map";
+			sourceTree = "<group>";
+		};
 		A3AC685629E9F4A300D9C16A = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +197,7 @@
 		A3AC688C29EB3B4900D9C16A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3371C3929EC7F6100451CD7 /* GMS Map */,
 				A3AC688F29EB3BA500D9C16A /* HomeScreenView.swift */,
 				A3AC689129EB3FCA00D9C16A /* ButtonsView.swift */,
 				A3AC689329EB436500D9C16A /* SoloGameView.swift */,
@@ -200,6 +216,7 @@
 		A3AC688E29EB3B5800D9C16A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3371C3E29EC826300451CD7 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -450,7 +467,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3AC689029EB3BA500D9C16A /* HomeScreenView.swift in Sources */,
+				A3371C3D29EC803A00451CD7 /* MapCoordinator.swift in Sources */,
+				A3371C3F29EC826300451CD7 /* GameModel.swift in Sources */,
 				A3371C3829EB624800451CD7 /* GameManager.swift in Sources */,
+				A3371C3B29EC7FCB00451CD7 /* GMSMap.swift in Sources */,
 				A3AC686529E9F4A300D9C16A /* ContentView.swift in Sources */,
 				A3AC689229EB3FCA00D9C16A /* ButtonsView.swift in Sources */,
 				A3AC686329E9F4A300D9C16A /* GeoguessApp.swift in Sources */,
