@@ -8,12 +8,14 @@
 import Foundation
 import GoogleMaps
 
-class MapCoordinator: NSObject, GMSMapViewDelegate{
+class MapCoordinator: NSObject, GMSPanoramaViewDelegate, GMSMapViewDelegate{
     let manager: GameManager
     
     init(manager: GameManager) {
         self.manager = manager
     }
+    
+    
     
     
 }

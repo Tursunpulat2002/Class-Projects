@@ -11,6 +11,8 @@ import GoogleMaps
 class GameManager  : NSObject, ObservableObject {
     let locationManager = CLLocationManager()
     
+    @Published var isGuess: Bool = false
+    
     @Published var location: CLLocation? {
       willSet { objectWillChange.send() }
     }
