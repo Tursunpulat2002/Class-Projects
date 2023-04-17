@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    @EnvironmentObject var manager: GameManager
     var body: some View {
         NavigationStack{
             ZStack{
@@ -29,6 +30,11 @@ struct HomeScreenView: View {
                             .foregroundColor(Color.blue)
                             .frame(width: 150, height: 70)
                     }.padding()
+                        .onTapGesture {
+                            manager.game?.gameType = "Solo"
+                            manager.game?.playerNumber = 1
+                            manager.round = 1
+                        }
                     
                     NavigationLink{
                         
@@ -37,6 +43,9 @@ struct HomeScreenView: View {
                             .foregroundColor(Color.blue)
                             .frame(width: 150, height: 70)
                     }.padding()
+                        .onTapGesture {
+                            manager.game?.gameType = "Double"
+                        }
                     
                     NavigationLink{
                         
@@ -45,6 +54,9 @@ struct HomeScreenView: View {
                             .foregroundColor(Color.blue)
                             .frame(width: 150, height: 70)
                     }.padding()
+                        .onTapGesture {
+                            manager.game?.gameType = "Arcade"
+                        }
                     
                     NavigationLink{
                         
@@ -70,5 +82,6 @@ struct HomeScreenView: View {
 struct HomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreenView()
+            .environmentObject(GameManager())
     }
 }

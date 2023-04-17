@@ -20,11 +20,11 @@ struct SoloGameView: View {
             
             Button {
                 manager.isGuess = true
+                manager.game?.locationPerRound.append(Location(latitude: (manager.location?.coordinate.latitude)!, longitude: (manager.location?.coordinate.longitude)!))
             } label: {
                 ButtonsView(buttonTitle: "Guess", color: Color.black)
                     .frame(width: 80, height: 30)
             }.offset(CGSize(width: 0, height: 350))
-
         }
     }
 }

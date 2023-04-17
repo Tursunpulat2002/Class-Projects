@@ -16,6 +16,7 @@ struct GuessView: View {
             
             Button{
                 manager.isGuess.toggle()
+                manager.round! += 1
             }label: {
                 ButtonsView(buttonTitle: "Submit", color: Color.black)
                     .frame(width: 80, height: 30)

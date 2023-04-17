@@ -12,6 +12,11 @@ import CoreLocation
 class GameManager  : NSObject, ObservableObject {
     let locationManager = CLLocationManager()
     
+    var storageManager: StorageManager<[Game]>
+    @Published var games: [Game]
+    @Published var game: Game?
+    @Published var round: Int?
+    
     @Published var isGuess: Bool = false
     
     @Published var location: CLLocation?{
@@ -29,8 +34,13 @@ class GameManager  : NSObject, ObservableObject {
     }
     
     override init() {
+        let filename = "GeoGuess"
+        storageManager = StorageManager<[Game]>(filename: filename)
+        games = storageManager.modelData ?? []
+        
         super.init()
         location = CLLocation(latitude: CLLocationDegrees(randomBetweenNumbers(firstNum: 25.3, secondNum: 49.0)), longitude: CLLocationDegrees(randomBetweenNumbers(firstNum: -124.7, secondNum: -64.2)))
+        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -39,6 +49,10 @@ class GameManager  : NSObject, ObservableObject {
     
     func randomBetweenNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
+    
+    func generateNewLocation(){
+        location = CLLocation(latitude: CLLocationDegrees(randomBetweenNumbers(firstNum: 25.3, secondNum: 49.0)), longitude: CLLocationDegrees(randomBetweenNumbers(firstNum: -124.7, secondNum: -64.2)))
     }
 }
 
