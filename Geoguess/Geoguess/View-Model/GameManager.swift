@@ -7,31 +7,38 @@
 
 import Foundation
 import GoogleMaps
+import CoreLocation
 
 class GameManager  : NSObject, ObservableObject {
     let locationManager = CLLocationManager()
     
     @Published var isGuess: Bool = false
     
-    @Published var location: CLLocation? {
-      willSet { objectWillChange.send() }
+    @Published var location: CLLocation?{
+        willSet { objectWillChange.send() }
     }
-   
-   var latitude: CLLocationDegrees {
-       return location?.coordinate.latitude ?? 0
-   }
-   
-   var longitude: CLLocationDegrees {
-       return location?.coordinate.longitude ?? 0
-   }
+    
+    var latitude: CLLocationDegrees
+    {
+        return location?.coordinate.latitude ?? 0
+    }
+    
+    var longitude: CLLocationDegrees
+    {
+        return location?.coordinate.longitude ?? 0
+    }
     
     override init() {
         super.init()
-
+        location = CLLocation(latitude: CLLocationDegrees(randomBetweenNumbers(firstNum: 25.3, secondNum: 49.0)), longitude: CLLocationDegrees(randomBetweenNumbers(firstNum: -124.7, secondNum: -64.2)))
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+    }
+    
+    func randomBetweenNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
 }
 

@@ -12,8 +12,7 @@ struct GMSStreetView: UIViewRepresentable {
     @ObservedObject var manager: GameManager
     
     func makeUIView(context: Context) -> GMSPanoramaView {
-        let streetView = GMSPanoramaView(frame: CGRect.zero)
-        streetView.moveNearCoordinate(CLLocationCoordinate2D(latitude: CLLocationDegrees(40.798103), longitude: CLLocationDegrees(-77.856788)))
+        let streetView = GMSPanoramaView.panorama(withFrame: CGRect.zero, nearCoordinate: CLLocationCoordinate2D(latitude: manager.latitude, longitude: manager.longitude), radius: 10000)
         return streetView
     }
     
@@ -31,7 +30,7 @@ struct GMSMap: UIViewRepresentable{
     let marker : GMSMarker = GMSMarker()
     
     func makeUIView(context: Context) -> GMSMapView {
-        let camera = GMSCameraPosition.camera(withLatitude: CLLocationDegrees(40.798103), longitude: CLLocationDegrees(-77.856788), zoom: 20.0)
+        let camera = GMSCameraPosition.camera(withLatitude: manager.latitude, longitude: manager.longitude, zoom: 10.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.mapType = .satellite
         
@@ -39,9 +38,7 @@ struct GMSMap: UIViewRepresentable{
     }
     
     func updateUIView(_ mapView: GMSMapView, context: Context) {
-        //        mapView.animate(toLocation: CLLocationCoordinate2D(latitude: manager.latitude, longitude: manager.longitude))
-        //        marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(40.798103), longitude: CLLocationDegrees(-77.856788))
-        //        marker.map = mapView
+        
     }
     
     func makeCoordinator() -> MapCoordinator {
