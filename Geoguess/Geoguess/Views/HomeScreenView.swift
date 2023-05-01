@@ -30,21 +30,8 @@ struct HomeScreenView: View {
                             .foregroundColor(Color.blue)
                             .frame(width: 150, height: 70)
                     }.padding()
-                        .onTapGesture {
-                            manager.game?.gameType = "Solo"
-                            manager.game?.playerNumber = 1
-                            manager.round = 1
-                        }
-                    
-                    NavigationLink{
-                        
-                    }label: {
-                        ButtonsView(buttonTitle: "Double", color: Color.black)
-                            .foregroundColor(Color.blue)
-                            .frame(width: 150, height: 70)
-                    }.padding()
-                        .onTapGesture {
-                            manager.game?.gameType = "Double"
+                        .onSubmit{
+                            manager.game.gameType = "Solo"
                         }
                     
                     NavigationLink{
@@ -55,21 +42,13 @@ struct HomeScreenView: View {
                             .frame(width: 150, height: 70)
                     }.padding()
                         .onTapGesture {
-                            manager.game?.gameType = "Arcade"
+                            manager.game.gameType = "Arcade"
                         }
                     
                     NavigationLink{
                         
                     }label: {
                         ButtonsView(buttonTitle: "Score Board", color: Color.black)
-                            .foregroundColor(Color.blue)
-                            .frame(width: 150, height: 70)
-                    }.padding()
-                    
-                    NavigationLink{
-                        
-                    }label: {
-                        ButtonsView(buttonTitle: "Setting", color: Color.black)
                             .foregroundColor(Color.blue)
                             .frame(width: 150, height: 70)
                     }.padding()

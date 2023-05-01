@@ -16,7 +16,11 @@ struct GuessView: View {
             
             Button{
                 manager.isGuess.toggle()
-                manager.round! += 1
+                manager.round += 1
+                manager.guessLocate()
+                if(manager.round > 5){
+                    manager.gameEnd.toggle()
+                }
             }label: {
                 ButtonsView(buttonTitle: "Submit", color: Color.black)
                     .frame(width: 80, height: 30)

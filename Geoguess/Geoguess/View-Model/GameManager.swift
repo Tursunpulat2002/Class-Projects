@@ -14,8 +14,8 @@ class GameManager  : NSObject, ObservableObject {
     
     var storageManager: StorageManager<[Game]>
     @Published var games: [Game]
-    @Published var game: Game?
-    @Published var round: Int?
+    @Published var game: Game
+    @Published var round: Int
     
     @Published var isGuess: Bool = false
     
@@ -23,21 +23,23 @@ class GameManager  : NSObject, ObservableObject {
         willSet { objectWillChange.send() }
     }
     
-    var latitude: CLLocationDegrees
-    {
+    var latitude: CLLocationDegrees{
         return location?.coordinate.latitude ?? 0
     }
-    
-    var longitude: CLLocationDegrees
-    {
+    var longitude: CLLocationDegrees{
         return location?.coordinate.longitude ?? 0
     }
+    
+    @Published var gameEnd: Bool = false
+    
+    @Published var guessLocation: Location?
     
     override init() {
         let filename = "GeoGuess"
         storageManager = StorageManager<[Game]>(filename: filename)
         games = storageManager.modelData ?? []
-        
+        game = Game(playerNumber: 1, gameType: "Solo", scoresPerRound: [], locationPerRound: [], totalScore: 0)
+        round = 1
         super.init()
         location = CLLocation(latitude: CLLocationDegrees(randomBetweenNumbers(firstNum: 25.3, secondNum: 49.0)), longitude: CLLocationDegrees(randomBetweenNumbers(firstNum: -124.7, secondNum: -64.2)))
         
@@ -53,6 +55,30 @@ class GameManager  : NSObject, ObservableObject {
     
     func generateNewLocation(){
         location = CLLocation(latitude: CLLocationDegrees(randomBetweenNumbers(firstNum: 25.3, secondNum: 49.0)), longitude: CLLocationDegrees(randomBetweenNumbers(firstNum: -124.7, secondNum: -64.2)))
+    }
+    
+    func guessLocate(){
+        let distance = GMSGeometryDistance(CLLocationCoordinate2D(latitude: latitude, longitude: longitude), CLLocationCoordinate2D(latitude: guessLocation!.latitude, longitude: guessLocation!.longitude))
+        
+        if(distance < 1000){
+            game.totalScore += 100
+        }else if(distance < 5000){
+            game.totalScore += 70
+        }else if(distance < 10000){
+            game.totalScore += 40
+        }else if(distance < 15000){
+            game.totalScore += 10
+        }else{
+            game.totalScore += 2
+        }
+        generateNewLocation()
+    }
+    
+    func endGame(){
+        games.append(game)
+        game = Game(playerNumber: 1, gameType: "Solo", scoresPerRound: [], locationPerRound: [], totalScore: 0)
+        generateNewLocation()
+        round = 1
     }
 }
 

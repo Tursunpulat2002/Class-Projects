@@ -8,14 +8,18 @@
 import Foundation
 import GoogleMaps
 
-class MapCoordinator: NSObject, GMSPanoramaViewDelegate, GMSMapViewDelegate{
+class MapCoordinator: NSObject, GMSMapViewDelegate{
     let manager: GameManager
     
     init(manager: GameManager) {
         self.manager = manager
     }
     
-    
-    
-    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        mapView.clear()
+        let marker = GMSMarker()
+        marker.position = coordinate
+        marker.map = mapView
+        manager.guessLocation = Location(latitude: coordinate.latitude, longitude: coordinate.longitude)
+    }
 }

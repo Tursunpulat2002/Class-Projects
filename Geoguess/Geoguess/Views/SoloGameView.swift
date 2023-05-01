@@ -17,10 +17,27 @@ struct SoloGameView: View {
                 .sheet(isPresented: $manager.isGuess) {
                    GuessView()
                 }
+                .sheet(isPresented: $manager.gameEnd, content: {
+                    EndGameView()
+                })
+
+            
+            VStack{
+                Text("Round \(manager.round)")
+                    .font(.system(size: 20))
+                    .bold()
+                    .foregroundColor(Color.red)
+                
+                Text("Points \(manager.game.totalScore)")
+                    .font(.system(size: 20))
+                    .bold()
+                    .foregroundColor(Color.red)
+            }
+            .position(CGPoint(x: 330, y: 10))
             
             Button {
                 manager.isGuess = true
-                manager.game?.locationPerRound.append(Location(latitude: (manager.location?.coordinate.latitude)!, longitude: (manager.location?.coordinate.longitude)!))
+                manager.game.locationPerRound.append(Location(latitude: (manager.location?.coordinate.latitude)!, longitude: (manager.location?.coordinate.longitude)!))
             } label: {
                 ButtonsView(buttonTitle: "Guess", color: Color.black)
                     .frame(width: 80, height: 30)
