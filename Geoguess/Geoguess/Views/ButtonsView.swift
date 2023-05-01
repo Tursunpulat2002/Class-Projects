@@ -13,17 +13,12 @@ struct ButtonsView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 5)
-//                .frame(width: 150, height: 70)
             
             Text(buttonTitle)
                 .bold()
                 .scaledToFill()
-//                .frame(width: 150, height: 70)
-//                .font(.system(size: 100))
-//                .minimumScaleFactor(0.1)
                 .foregroundColor(color)
         }
-//        .frame(width: 150, height: 70)
     }
 }
 

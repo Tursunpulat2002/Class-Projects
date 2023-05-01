@@ -62,14 +62,19 @@ class GameManager  : NSObject, ObservableObject {
         
         if(distance < 1000){
             game.totalScore += 100
+            game.scoresPerRound.append(100)
         }else if(distance < 5000){
             game.totalScore += 70
+            game.scoresPerRound.append(70)
         }else if(distance < 10000){
             game.totalScore += 40
+            game.scoresPerRound.append(40)
         }else if(distance < 15000){
             game.totalScore += 10
+            game.scoresPerRound.append(10)
         }else{
             game.totalScore += 2
+            game.scoresPerRound.append(2)
         }
         generateNewLocation()
     }

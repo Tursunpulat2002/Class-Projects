@@ -41,9 +41,6 @@ struct HomeScreenView: View {
                             .foregroundColor(Color.blue)
                             .frame(width: 150, height: 70)
                     }.padding()
-                        .onTapGesture {
-                            manager.game.gameType = "Arcade"
-                        }
                     
                     NavigationLink{
                         ScoreBoardView()

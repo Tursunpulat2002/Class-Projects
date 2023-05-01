@@ -11,23 +11,23 @@ struct ScoreBoardView: View {
     @EnvironmentObject var manager : GameManager
     var body: some View {
         VStack(alignment: .leading){
-            HStack{
-                Text("Game")
-                Text("Player")
-                Text("Locations")
-                Text("Score/Round")
-                Text("Total Score")
-            }
-            ForEach (manager.games) {game in
-                HStack{
-                    Text("\(game.gameType)")
-                    Text("\(game.playerNumber)")
-                    LocationPerRoundView(locations: game.locationPerRound)
-                    ScoresPerRoundView(scores: game.scoresPerRound)
-                    Text("\(game.totalScore)")
+            ScrollView{
+                ForEach (manager.games) {game in
+                    HStack{
+                        VStack{
+                            Text("Game")
+                            Text("\(game.gameType)")
+                        }
+                        LocationPerRoundView(locations: game.locationPerRound)
+                        ScoresPerRoundView(scores: game.scoresPerRound)
+                        VStack{
+                            Text("Total")
+                            Text("\(game.totalScore)")
+                        }
+                    }
                 }
             }
-        }.position(CGPoint(x: 200, y: 70))
+        }
     }
 }
 

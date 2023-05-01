@@ -35,6 +35,7 @@ struct ArcadeGameView: View {
                 }
                 .onAppear{
                     timeRun = true
+                    manager.game.gameType = "Arcade"
                 }
 
             
