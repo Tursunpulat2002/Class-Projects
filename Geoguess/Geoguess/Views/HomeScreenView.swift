@@ -35,7 +35,7 @@ struct HomeScreenView: View {
                         }
                     
                     NavigationLink{
-                        
+                        ArcadeGameView()
                     }label: {
                         ButtonsView(buttonTitle: "Arcade", color: Color.black)
                             .foregroundColor(Color.blue)
@@ -46,7 +46,7 @@ struct HomeScreenView: View {
                         }
                     
                     NavigationLink{
-                        
+                        ScoreBoardView()
                     }label: {
                         ButtonsView(buttonTitle: "Score Board", color: Color.black)
                             .foregroundColor(Color.blue)

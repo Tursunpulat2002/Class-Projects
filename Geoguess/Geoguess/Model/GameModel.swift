@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Location: Codable{
+struct Location: Codable, Hashable{
     let latitude: Double
     let longitude: Double
 }
@@ -19,4 +19,6 @@ struct Game: Identifiable, Codable{
     var scoresPerRound: [Int]
     var locationPerRound: [Location]
     var totalScore: Int
+    
+    static var standard = Game(playerNumber: 1, gameType: "Solo", scoresPerRound: [100, 100, 100, 100, 100], locationPerRound: [Location(latitude: 20, longitude: 20), Location(latitude: 20, longitude: 20), Location(latitude: 20, longitude: 20), Location(latitude: 20, longitude: 20), Location(latitude: 20, longitude: 20)], totalScore: 500)
 }

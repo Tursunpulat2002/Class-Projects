@@ -79,6 +79,7 @@ class GameManager  : NSObject, ObservableObject {
         game = Game(playerNumber: 1, gameType: "Solo", scoresPerRound: [], locationPerRound: [], totalScore: 0)
         generateNewLocation()
         round = 1
+        storageManager.save(modelData: games)
     }
 }
 

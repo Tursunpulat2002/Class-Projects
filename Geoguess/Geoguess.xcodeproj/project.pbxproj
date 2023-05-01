@@ -17,7 +17,10 @@
 		A3371C4129ECB34700451CD7 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4029ECB34600451CD7 /* GuessView.swift */; };
 		A3371C4329ECD26F00451CD7 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4229ECD26F00451CD7 /* StorageManager.swift */; };
 		A3371C4529FF227900451CD7 /* GuessPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4429FF227900451CD7 /* GuessPin.swift */; };
-		A3371C4729FF3D7400451CD7 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4629FF3D7400451CD7 /* EndGameView.swift */; };
+		A3371C4929FF4A4400451CD7 /* ArcadeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4829FF4A4400451CD7 /* ArcadeGameView.swift */; };
+		A3371C4B29FF510F00451CD7 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4A29FF510F00451CD7 /* ScoreBoardView.swift */; };
+		A3371C4D29FF54CA00451CD7 /* LocationPerRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4C29FF54CA00451CD7 /* LocationPerRoundView.swift */; };
+		A3371C4F29FF55F100451CD7 /* ScoresPerRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3371C4E29FF55F100451CD7 /* ScoresPerRoundView.swift */; };
 		A3AC686329E9F4A300D9C16A /* GeoguessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */; };
 		A3AC686529E9F4A300D9C16A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC686429E9F4A300D9C16A /* ContentView.swift */; };
 		A3AC686729E9F4A400D9C16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3AC686629E9F4A400D9C16A /* Assets.xcassets */; };
@@ -61,7 +64,10 @@
 		A3371C4029ECB34600451CD7 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		A3371C4229ECD26F00451CD7 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A3371C4429FF227900451CD7 /* GuessPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessPin.swift; sourceTree = "<group>"; };
-		A3371C4629FF3D7400451CD7 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
+		A3371C4829FF4A4400451CD7 /* ArcadeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeGameView.swift; sourceTree = "<group>"; };
+		A3371C4A29FF510F00451CD7 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		A3371C4C29FF54CA00451CD7 /* LocationPerRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPerRoundView.swift; sourceTree = "<group>"; };
+		A3371C4E29FF55F100451CD7 /* ScoresPerRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresPerRoundView.swift; sourceTree = "<group>"; };
 		A3AC685F29E9F4A300D9C16A /* Geoguess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geoguess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AC686229E9F4A300D9C16A /* GeoguessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoguessApp.swift; sourceTree = "<group>"; };
 		A3AC686429E9F4A300D9C16A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,7 +216,10 @@
 				A3AC689129EB3FCA00D9C16A /* ButtonsView.swift */,
 				A3AC689329EB436500D9C16A /* SoloGameView.swift */,
 				A3371C4029ECB34600451CD7 /* GuessView.swift */,
-				A3371C4629FF3D7400451CD7 /* EndGameView.swift */,
+				A3371C4829FF4A4400451CD7 /* ArcadeGameView.swift */,
+				A3371C4A29FF510F00451CD7 /* ScoreBoardView.swift */,
+				A3371C4C29FF54CA00451CD7 /* LocationPerRoundView.swift */,
+				A3371C4E29FF55F100451CD7 /* ScoresPerRoundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -478,16 +487,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3371C4D29FF54CA00451CD7 /* LocationPerRoundView.swift in Sources */,
 				A3AC689029EB3BA500D9C16A /* HomeScreenView.swift in Sources */,
-				A3371C4729FF3D7400451CD7 /* EndGameView.swift in Sources */,
 				A3371C3D29EC803A00451CD7 /* MapCoordinator.swift in Sources */,
+				A3371C4B29FF510F00451CD7 /* ScoreBoardView.swift in Sources */,
 				A3371C4329ECD26F00451CD7 /* StorageManager.swift in Sources */,
 				A3371C3F29EC826300451CD7 /* GameModel.swift in Sources */,
 				A3371C3829EB624800451CD7 /* GameManager.swift in Sources */,
 				A3371C3B29EC7FCB00451CD7 /* GMSMap.swift in Sources */,
 				A3AC686529E9F4A300D9C16A /* ContentView.swift in Sources */,
+				A3371C4929FF4A4400451CD7 /* ArcadeGameView.swift in Sources */,
 				A3371C4529FF227900451CD7 /* GuessPin.swift in Sources */,
 				A3371C4129ECB34700451CD7 /* GuessView.swift in Sources */,
+				A3371C4F29FF55F100451CD7 /* ScoresPerRoundView.swift in Sources */,
 				A3AC689229EB3FCA00D9C16A /* ButtonsView.swift in Sources */,
 				A3AC686329E9F4A300D9C16A /* GeoguessApp.swift in Sources */,
 				A3AC689429EB436500D9C16A /* SoloGameView.swift in Sources */,
